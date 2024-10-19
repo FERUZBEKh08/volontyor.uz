@@ -1,4 +1,4 @@
-import telegram from "../public/icon/Telegram.png";
+import telegram from "../public/icon/telegram.png";
 import x from "../public/icon/twitter.png";
 import youtube from "../public/icon/youtube.png";
 import facebook from "../public/icon/facebook.png";
