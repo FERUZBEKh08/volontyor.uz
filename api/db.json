@@ -1,0 +1,788 @@
+{
+    "volunteer": [
+      {
+        "id": "1",
+        "name": "Dilmurod Rahmonov",
+        "age": "27",
+        "level": "5",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Korean"
+        },
+        "region": "Toshkent",
+        "email": "dilmurod.rahmonov@gmail.com"
+    },
+    {
+        "id": "2",
+        "name": "Javlonbek Sultonov",
+        "age": "22",
+        "level": "4",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Russian"
+        },
+        "region": "Samarqand",
+        "email": "javlonbek.sultonov@gmail.com"
+    },
+    {
+        "id": "3",
+        "name": "Oydin Shukurova",
+        "age": "30",
+        "level": "3",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "English"
+        },
+        "region": "Buxoro",
+        "email": "oydin.shukurova@gmail.com"
+    },
+    {
+        "id": "4",
+        "name": "Farhodbek Murodov",
+        "age": "29",
+        "level": "3",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Korean"
+        },
+        "region": "Andijon",
+        "email": "farhodbek.murodov@gmail.com"
+    },
+    {
+        "id": "5",
+        "name": "Nilufar Azizova",
+        "age": "24",
+        "level": "4",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Russian"
+        },
+        "region": "Farg‘ona",
+        "email": "nilufar.azizova@gmail.com"
+    },
+    {
+        "id": "6",
+        "name": "Sardorbek Yusupov",
+        "age": "26",
+        "level": "5",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "English"
+        },
+        "region": "Qashqadaryo",
+        "email": "sardorbek.yusupov@gmail.com"
+    },
+    {
+        "id": "7",
+        "name": "Zarina Xudoyberdiyeva",
+        "age": "28",
+        "level": "4",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Korean"
+        },
+        "region": "Namangan",
+        "email": "zarina.xudoyberdiyeva@gmail.com"
+    },
+    {
+        "id": "8",
+        "name": "Jamshidbek Aytmurodov",
+        "age": "23",
+        "level": "5",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Russian"
+        },
+        "region": "Surxondaryo",
+        "email": "jamshidbek.aytmurodov@gmail.com"
+    },
+    {
+        "id": "9",
+        "name": "Gulnora Karimova",
+        "age": "25",
+        "level": "3",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "English"
+        },
+        "region": "Sirdaryo",
+        "email": "gulnora.karimova@gmail.com"
+    },
+    {
+        "id": "10",
+        "name": "Dostonbek Nasrullayev",
+        "age": "21",
+        "level": "5",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Korean"
+        },
+        "region": "Xorazm",
+        "email": "dostonbek.nasrullayev@gmail.com"
+    },
+    {
+        "id": "11",
+        "name": "Suxrobbek Marufov",
+        "age": "26",
+        "level": "4",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Russian"
+        },
+        "region": "Jizzax",
+        "email": "suxrobbek.marufov@gmail.com"
+    },
+    {
+        "id": "12",
+        "name": "Dilshodbek Xolmirzaev",
+        "age": "30",
+        "level": "5",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "English"
+        },
+        "region": "Qoraqalpog‘iston",
+        "email": "dilshodbek.xolmirzaev@gmail.com"
+    },
+    {
+        "id": "13",
+        "name": "Nodira Qobilova",
+        "age": "24",
+        "level": "3",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Korean"
+        },
+        "region": "Qashqadaryo",
+        "email": "nodira.qobilova@gmail.com"
+    },
+    {
+        "id": "14",
+        "name": "Otabek Temirov",
+        "age": "28",
+        "level": "1",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Russian"
+        },
+        "region": "Toshkent",
+        "email": "otabek.temirov@gmail.com"
+    },
+    {
+        "id": "15",
+        "name": "Sardorbek Mamatqulov",
+        "age": "25",
+        "level": "4",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "English"
+        },
+        "region": "Andijon",
+        "email": "sardorbek.mamatqulov@gmail.com"
+    },
+    {
+        "id": "16",
+        "name": "Rayhon Shamsutdinova",
+        "age": "29",
+        "level": "3",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Korean"
+        },
+        "region": "Samarqand",
+        "email": "rayhon.shamsutdinova@gmail.com"
+    },
+    {
+        "id": "17",
+        "name": "Shavkatbek Qodirov",
+        "age": "23",
+        "level": "5",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Russian"
+        },
+        "region": "Xorazm",
+        "email": "shavkatbek.qodirov@gmail.com"
+    },
+    {
+        "id": "18",
+        "name": "Mukhammadjon Ergashev",
+        "age": "31",
+        "level": "4",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "English"
+        },
+        "region": "Toshkent",
+        "email": "mukhammadjon.ergashev@gmail.com"
+    },
+    {
+        "id": "19",
+        "name": "Furqatbek Abdurashidov",
+        "age": "21",
+        "level": "3",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Korean"
+        },
+        "region": "Sirdaryo",
+        "email": "furqatbek.abdurashidov@gmail.com"
+    },
+    {
+        "id": "20",
+        "name": "Shokhrukhbek Abduqahhorov",
+        "age": "28",
+        "level": "5",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Russian"
+        },
+        "region": "Xorazm",
+        "email": "shokhrukhbek.abduqahhorov@gmail.com"
+    },
+    {
+        "id": "21",
+        "name": "Sabina Zokirova",
+        "age": "27",
+        "level": "4",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "English"
+        },
+        "region": "Jizzax",
+        "email": "sabina.zokirova@gmail.com"
+    },
+    {
+        "id": "22",
+        "name": "Azamatbek Shodiev",
+        "age": "26",
+        "level": "3",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Korean"
+        },
+        "region": "Samarqand",
+        "email": "azamatbek.shodiev@gmail.com"
+    },
+    {
+        "id": "23",
+        "name": "Dilshod Rasulov",
+        "age": "24",
+        "level": "5",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Russian"
+        },
+        "region": "Namangan",
+        "email": "dilshod.rasulov@gmail.com"
+    },
+    {
+        "id": "24",
+        "name": "Zilola Boboqulova",
+        "age": "29",
+        "level": "4",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "English"
+        },
+        "region": "Toshkent",
+        "email": "zilola.boboqulova@gmail.com"
+    },
+    {
+        "id": "25",
+        "name": "Karimjon Atoyev",
+        "age": "30",
+        "level": "2",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Korean"
+        },
+        "region": "Xorazm",
+        "email": "karimjon.atoyev@gmail.com"
+    },
+    {
+        "id": "26",
+        "name": "Anvarbek Qodirov",
+        "age": "22",
+        "level": "3",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Russian"
+        },
+        "region": "Samarqand",
+        "email": "anvarbek.qodirov@gmail.com"
+    },
+    {
+        "id": "27",
+        "name": "Gulbahor Anvarova",
+        "age": "25",
+        "level": "5",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "English"
+        },
+        "region": "Sirdaryo",
+        "email": "gulbahor.anvarova@gmail.com"
+    },
+    {
+        "id": "28",
+        "name": "Oydinbek Jumaev",
+        "age": "28",
+        "level": "5",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Korean"
+        },
+        "region": "Qashqadaryo",
+        "email": "oydinbek.jumaev@gmail.com"
+    },
+    {
+        "id": "29",
+        "name": "Xurshidbek Yuldashev",
+        "age": "24",
+        "level": "4",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Russian"
+        },
+        "region": "Navoiy",
+        "email": "xurshidbek.yuldashev@gmail.com"
+    },
+    {
+        "id": "30",
+        "name": "Farzona Shokirova",
+        "age": "21",
+        "level": "5",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "English"
+        },
+        "region": "Toshkent",
+        "email": "farzona.shokirova@gmail.com"
+    },
+    {
+        "id": "31",
+        "name": "Yusufbek Burhonov",
+        "age": "26",
+        "level": "3",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Korean"
+        },
+        "region": "Namangan",
+        "email": "yusufbek.burhonov@gmail.com"
+    },
+    {
+        "id": "32",
+        "name": "Akmalbek Tashkentov",
+        "age": "29",
+        "level": "2",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Russian"
+        },
+        "region": "Xorazm",
+        "email": "akmalbek.tashkentov@gmail.com"
+    },
+    {
+        "id": "33",
+        "name": "Sardorbek Ahmadov",
+        "age": "24",
+        "level": "4",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "English"
+        },
+        "region": "Buxoro",
+        "email": "sardorbek.ahmadov@gmail.com"
+    },
+    {
+        "id": "34",
+        "name": "Shahrizoda Shomurodova",
+        "age": "22",
+        "level": "5",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Korean"
+        },
+        "region": "Sirdaryo",
+        "email": "shahrizoda.shomurodova@gmail.com"
+    },
+    {
+        "id": "35",
+        "name": "Shodiyor Khamdamov",
+        "age": "25",
+        "level": "3",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Russian"
+        },
+        "region": "Samarqand",
+        "email": "shodiyor.khamdamov@gmail.com"
+    },
+    {
+        "id": "36",
+        "name": "Jannatbek Nurmurodov",
+        "age": "26",
+        "level": "4",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "English"
+        },
+        "region": "Jizzax",
+        "email": "jannatbek.nurmurodov@gmail.com"
+    },
+    {
+        "id": "37",
+        "name": "Ravshanbek Toshmurodov",
+        "age": "28",
+        "level": "5",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Korean"
+        },
+        "region": "Qashqadaryo",
+        "email": "ravshanbek.toshmurodov@gmail.com"
+    },
+    {
+        "id": "38",
+        "name": "Munira Akbarova",
+        "age": "30",
+        "level": "5",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Russian"
+        },
+        "region": "Sirdaryo",
+        "email": "munira.akbarova@gmail.com"
+    },
+    {
+        "id": "39",
+        "name": "Rufatbek Asadov",
+        "age": "23",
+        "level": "3",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "English"
+        },
+        "region": "Farg‘ona",
+        "email": "rufatbek.asadov@gmail.com"
+    },
+    {
+        "id": "40",
+        "name": "Sultanbek Karimov",
+        "age": "25",
+        "level": "5",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Korean"
+        },
+        "region": "Xorazm",
+        "email": "sultanbek.karimov@gmail.com"
+    },
+    {
+        "id": "41",
+        "name": "Murodov Bahrom",
+        "age": "26",
+        "level": "4",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Russian"
+        },
+        "region": "Namangan",
+        "email": "murodov.bahrom@gmail.com"
+    },
+    {
+        "id": "42",
+        "name": "Sohibbek Ramazonov",
+        "age": "27",
+        "level": "3",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "English"
+        },
+        "region": "Toshkent",
+        "email": "sohibbek.ramazonov@gmail.com"
+    },
+    {
+        "id": "43",
+        "name": "Iltijor Bekmurodov",
+        "age": "21",
+        "level": "5",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Korean"
+        },
+        "region": "Samarqand",
+        "email": "iltijor.bekmurodov@gmail.com"
+    },
+    {
+        "id": "44",
+        "name": "Dilafruz Hasanova",
+        "age": "24",
+        "level": "1",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Russian"
+        },
+        "region": "Buxoro",
+        "email": "dilafruz.hasanova@gmail.com"
+    },
+    {
+        "id": "45",
+        "name": "Rahmatullo Ergashev",
+        "age": "25",
+        "level": "4",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "English"
+        },
+        "region": "Toshkent",
+        "email": "rahmatullo.ergashev@gmail.com"
+    },
+    {
+        "id": "46",
+        "name": "Shohruh Khamdamov",
+        "age": "26",
+        "level": "5",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Korean"
+        },
+        "region": "Qashqadaryo",
+        "email": "shohruh.khamdamov@gmail.com"
+    },
+    {
+        "id": "47",
+        "name": "O‘tkirbek To‘rayev",
+        "age": "29",
+        "level": "3",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Russian"
+        },
+        "region": "Farg‘ona",
+        "email": "otkirbek.torayev@gmail.com"
+    },
+    {
+        "id": "48",
+        "name": "Feruzbek Asadov",
+        "age": "22",
+        "level": "3",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "English"
+        },
+        "region": "Jizzax",
+        "email": "feruzbek.asadov@gmail.com"
+    },
+    {
+        "id": "49",
+        "name": "Salim Tashkentov",
+        "age": "21",
+        "level": "5",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Korean"
+        },
+        "region": "Xorazm",
+        "email": "salim.tashkentov@gmail.com"
+    },
+    {
+        "id": "50",
+        "name": "Nodira Hamrova",
+        "age": "30",
+        "level": "4",
+        "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+        "languages": {
+            "lan1": "Tajik",
+            "lan2": "Russian"
+        },
+        "region": "Toshkent",
+        "email": "nodira.hamrova@gmail.com"
+    },
+    {
+      "id": "51",
+      "name": "Rahmatullo Ergashev",
+      "age": "25",
+      "level": "4",
+      "img": "https://images.app.goo.gl/g9hpyTatdsfo9kM5A",
+      "languages": {
+          "lan1": "Tajik",
+          "lan2": "English"
+      },
+      "region": "Toshkent",
+      "email": "rahmatullo.ergashev@gmail.com"
+  }
+    ],
+    "news" : [
+      {
+        "id" : "1",
+        "img" : "https://volontyor.uz/media/news/images/2024/10/photo_2024-10-03_22-48-56_gsHz3fY.jpg",
+        "name" : "“Mening tanlovim - obod vatanim!” foto va videolar ochiq Respublika tanlovi",
+        "team" : "“Mening tanlovim - obod vatanim!” foto va videolar ochiq Respublika tanlovi",
+        "clock" : "18:10",
+        "date" : "05.10.2024"
+      },
+      {
+        "id" : "2",
+        "img" : "https://volontyor.uz/media/news/images/2024/10/photo_2024-10-02_10-20-46.jpg",
+        "name" : "Samarqand mehr volontyorlari Inson markazida ragʻbatlantirildi",
+        "team" : "Oliy ta'lim muassasalariga kirmoqchi boʻlgan nogironligi bor abituriyentlarga test hududiga borish va qaytishda",
+        "clock" : "18:00",
+        "date" : "18.09.24"
+      },
+      {
+        "id" : "3",
+        "img" : "https://volontyor.uz/media/news/images/2024/10/photo_2024-10-03_22-48-56.jpg",
+        "name" : "Saylov volontyor nigohida",
+        "team" : "Volontyorlarimiz yurtimizning har bir fuqarosi uchun muhim boʻlgan mavzuga befarq boʻla olmadi. ",
+        "clock" : "09:00",
+        "date" : "03.09.24"
+      },
+      {
+        "id" : "4",
+        "img" : "https://volontyor.uz/media/news/images/2024/09/photo_2024-09-13_09-29-38.jpg",
+        "name" : "Navoiy viloyati Mehr volontyorlari rag'batlantirildi",
+        "team" : "Ijtimoiy himoya milliy agentligi Navoiy viloyat boshqarmasi hamda Oʻzbekiston volontyorlari",
+        "clock" : "18:00",
+        "date" : "24.08.24"
+      }
+    ],
+    "expert" : [
+      {
+        "id" : "1",
+        "name" : "Tojiyev Aziz Baxodir o'g'li",
+        "position" : "O'zbekiston volontyorlari assotsiatsiyasi eksperti",
+        "info" : "Yaxshi inson",
+        "img" : "https://volontyor.uz/media/experts/images/2024/01/Murad-10.jpg"
+      },
+      {
+        "id" : "2",
+        "name" : "Norpo'latov Elyor Diyorovich",
+        "position" : "O'zbekiston volontyorlari assotsiatsiyasi eksperti",
+        "info" : "2012-2016 yy. - Jizzax politexnika instituti talabasi 2015-2016 yy. - “Kamolot” yoshlar ijtimoiy harakati viloyat Kengashi qoshidagi “Salomatlik va ekologiya” markazi rahbari 2016-2017 yy. - “Kamolot” yoshlar ijtimoiy harakati qoshidagi “O‘quv-uslubiy markaz”  Jizzax viloyat koordinatori  2017-2017 yy. - “Kamolot” yoshlar ijtimoiy harakati Jizzax viloyat Kengashi apparati boshlang‘ich tashkilotlar bilan ishlash bo‘limi mudiri 2017-2019 yy. - O‘zbekiston yoshlar ittifoqi Jizzax viloyat Kengashi apparati boshlang‘ich tashkilotlar faoliyatini muvofiqlashtirish bo‘limi mudiri 2019-2019 yy. - O‘zbekiston yoshlar ittifoqi Jizzax viloyat Kengashi apparati boshlang‘ich tashkilotlar yetakchilari bilan ishlash va ular faoliyatini muvofiqlashtirish bo‘limi boshlig‘i 2019-2020 yy. - O‘zbekiston yoshlar ittifoqi Jizzax shahar Kengashi raisi  2020-2020 yy. - O‘zbekiston Respublikasi Yoshlar ishlari agentligi Jizzax shahar bo‘limi boshlig‘i 2020-2021 yy - O‘zbekiston Respublikasi Yoshlar ishlari agentligi Jizzax viloyat boshqarmasi besh tashabbusni muvofiqlashtirish bo‘yicha mutaxassis  2021 - 2022 yy - Yoshlar ishlari agentligi markaziy apparati Yoshlarni vatanparvarlik ruxida tarbiyalash va volontyorlikni rivojlantirish bo‘limi bosh mutaxassisi 2022 y. - x.v. – Yoshlar ishlari agentligi markaziy apparati Ta’lim muassasalarida yoshlar bilan  ishlash va volontyorlikni rivojlantirish boshqarmasi bosh mutaxassisi",
+        "img" : "https://volontyor.uz/media/experts/images/2024/01/Elyor-03.jpg"
+      },
+      {
+        "id" : "3",
+        "name" : "Imomnazarov Jamoliddin Mirsaid o'g'li",
+        "position" : "Respublika volontyorlar maktabi eksperti",
+        "info" : "F.I.O: Imomnazarov Jamoliddin Mirsaid o'g'l Tug'ilgan joyi: Samarqand viloyati, Urgut tumani2019-yildan boshlab IYIIC klubi a’zosi, “Lider yoshlar” assotsiatsiyasida IT-menejer, “Yuksalish” umummilliy harakati volontyori, UNICEFda U-Report loyihasi Samarqand viloyati Yoshlar Qo‘mitasi rahbari2019-yil UNICEFning U-Report loyihasi doirasida bir hafta Sirdaryo viloyatida targ‘ibotchi-trener sifatida ishtirok etgan.2020-yil “Digital Generation Uzbekistan” loyihasidagi faol ishtiroki uchun sertifikat bilan taqdirlangan2020-yil yakuni bo‘yicha Yoshlar ishlari agentligining “Yilning eng yaxshi volontyolik loyihasi” nominatsiyasi g‘olibi bo‘lgan2020-yil 17-sentabr sanasida o‘tkazilgan “Yetakchilik va volontyorlik – taraqqiyot omili” XI xalqaro konferensiyasida spiker sifatida ishtirok etib sertifikat bilan taqdirlangan2020-yilda “Yil talabasi - 2020” tanlovida “Yilning eng tashabbuskor talabasi” yo‘nalishida Universitet bosqichida birinchi o‘rinni egallagan2021-yil Yoshlarning Markaziy Osiyodagi Internet-resurslar va ijtimoiy tarmoqlarda noto‘g‘ri ma’lumotlarning ta’siriga qarshiligini kuchaytirish mavzusidagi seminarda “Sertifikat” bilan taqdirlangan2021-yilda “Yil talabasi - 2021” tanlovida “Yilning eng yaxshi bloger talabasi” yo‘nalishida Universitet bosqichida birinchi o‘rinni egallagan2021-yil Davlat xizmatini rivojlantirish agentligi tomonidan tashkil etilgan “Kelajak liderlari” klubida hamda “O‘zbekiston talabalar assotsiatsiyasi”da Axborot xizmati rahbari sifatida faoliyat yuritmoqd",
+        "img" : "https://volontyor.uz/media/experts/images/2024/01/JD-02.jpg"
+      },
+      {
+        "id" : "4",
+        "name" : "Abidova Shirin Rahimjanovna",
+        "position" : "O'zbekiston volontyorlari assotsiatsiyasi direktori",
+        "info" : "Tugʻilgan sanasi -  1984-yil 29-dekabr, Toshkent, Oʻzbekiston) — Jamoat arbobi, 2020-yil Oʻzbekiston Volontyorlari Assotsiatsiyasi rahbari 2002-yilda Toshkent davlat texnika universitetini (marketing), 2008-yilda Oʻzbekiston davlat sanʼat va madaniyat institutini (ijtimoy yoʻnalish), 2019-yilda Toshkent davlat pedagogiga universitetini (psixologiya) tamomlagan. 1999-yildan hozirgi kunga qadar yumshoq qobiliyatlar (soft skills) bo'yicha mustaqil trener hamda mintaqaviy expert. 1998-yildan hozirgi kungacha volontyorlik faoliyatini boshlagan (UNESCO klubi, Karl Popper munozara dasturlari, Parlament debat dasturi, „Vremya Chudes“ volontyorlik guruhi). 2004-yildan 2008 yilgacha birinchi nodavlat telekanal teleboshlovchisi hamda korrespondenti. 2008-yildan 2010 yilgacha O'zbekistonda birinchi marotaba amalga oshirilgan SOS Kinderdorf International qoshida Oilani mustahkamlash loyihasi ijtimoiy hodimi. 2014 - yildan 2017 yilgacha Zo'rTv telekanal boshlovchisi hamda muharriri. 2017-yildan Respublika „Mehrli qoʻllar“ markazida psixolog lavozimida ishlab kelmoqda. 2019-yilda „Bolalar va yoshlar oʻrtasida volontyorlar harakatini rivojlantirishga qoʻshgan hissasi uchun“ Toshkent shahridagi „Vremya Chudes“ („Moʻjizalar vaqti“) volontyorar harakati koordinatori Shirin Abidova Tahsin mukofotiga sazovor boʻldi. 2020-yil 5-dekabr kuni Oʻzbekiston Volontyorlari Assotsiatsiyasining birinchi rahbari boʻldi.",
+        "img" : "https://volontyor.uz/media/experts/images/2024/01/Shirin-01_lZg0OsJ.jpg"
+      },
+      {
+        "id" : "5",
+        "name" : "Naimov Azamat Hikmatovich",
+        "position" : "Oliy taʼlim, fan va innovatsiyalar vazirligining Buxoro viloyati hududiy boshqarmasi boshligʻi",
+        "info" : "A.Naimov 1993-yil Buxoro viloyatida tugʻilgan. U 2015-yili Buxoro davlat universiteti (bakalavr), 2019-yilda Bank-moliya akademiyasini (magistratura) tugatgan. 2017-2020-yillarda akademik M.Mirzayev nomidagi Bogʻdorchilik, uzumchilik va vinochilik ilmiy-tadqiqot institutida turli lavozimlarda ishlagan, 2019-yil El-yurt umidi jamg‘armasi hamda Germaniya Sharqiy qo‘mitasi tomonidan tashkil etilgan dastur doirasida Germaniyaning “Schmitz Cargobull AG” kompaniyasida stajirovka o‘tagan, 2020-2021-yy. Buxoro viloyati Qishloq xoʻjaligi boshqarmasida boshqarma boshligʻi oʻrinbosari sifatida faoliyat yuritgan. Buxoro viloyati talabalarining volontyorlik faoliyatini qo'llab-quvvatlab kelmoq ",
+        "img" : "https://volontyor.uz/media/experts/images/2024/01/Buxoro-03.jpg"
+      },
+      {
+        "id" : "6",
+        "name" : "Elmurodov Umidjon Negmurodovich",
+        "position" : "Buxoro viloyat yoshlar ishlari boshqarmasi ta’lim muassasalarida yoshlar bilan ishlash va volontyorlik faoliyatini rivojlantirish bo‘yicha bosh mutaxassisi",
+        "info" : "2017-2021 yy. - Buxoro davlat universiteti talabasi 2021-2021 yy. - Buxoro shahar 57-imkoniyati cheklangan bolalar maktabgacha ta’lim tashkiloti jismoniy tarbiya yo‘riqchisi 2021-2021 yy. - Buxoro shahar 19-umumta’lim maktabi jismoniy tarbiya fani o‘qituvchisi 2021-2022 yy. - Kogon shahar turizm va sport bo‘limi mutaxassisi 2022-2022 yy. - Kogon shahar turizm va sport bo‘limi boshlig‘i 2022-2022 yy. - Xalq deputatlari Buxoro shahar Kengashi kotibiyati bosh mutaxassisi 2022-2023 yy. - Yoshlar ishlari agentligi Buxoro viloyat boshqarmasi ijtimoiy himoyaga muhtoj yoshlar bilan ishlash bo‘yicha mutaxassisi 2023 y. - h.v. - Yoshlar ishlari agentligi Buxoro viloyat yoshlar ishlari boshqarmasi ta’lim muassasalarida yoshlar bilan ishlash va volontyorlik faoliyatini rivojlantirish bo‘yicha bosh mutaxassis ",
+        "img" : "https://volontyor.uz/media/experts/images/2024/01/Buxoro-04.jpg"
+      },
+      {
+        "id" : "7",
+        "name" : "Xamidova Shaxzoda Xusniddinovna",
+        "position" : "Ta’lim muassasalarida yoshlar bilan ishlash va volontyorlik faoliyatini rivojlantirish bo‘yicha bosh mutaxassisi",
+        "info" : "Xamidova Shaxzoda Mazkur vazifada 2022 yildan buyon ishlamoqda. Izlanuvchanligi va tashabbuskorligi bilan viloyatimizda iste’dodli tashabbuskor, ijtimoiy himoyaga muhtoj, volontiyor, hamda faol xotin qizlarni har tomonlama qo‘llab-quvvatlash, ularning turli tanlov va musobaqalarda ishtirok etishiga tashkiliy-moliyaviy yordam ko‘rsatish borasida samarali faoliyat olib bormoqda.  Ta’lim muassasalaridagi yoshlar xususan oliy ta’lim, proffesional ta’lim umumta’lim maktablaridagi yoshlar o‘rtasida “Zakovat” intellektual o‘yinlari, shaxmat rokirovka musobaqalari, “Kelajak-kasblari” loyihalari, “Ibrat farzandlari”, “Xorijiy tillar marafoni” loyihalar hamda “Qizlar-ovozi” loyihalari doirasida yoshlarning muammo va takliflarini aniqlash va o‘rganish bilan birgalikda ta’lim muassasalari bilan homkorlikda turli loyihalar tashkil etib kelmoqda. 2022-2023-yillarda Ijtimoiy himoyaga muhtoj nogironligi bo‘lgan yoshlar bilan birgalikda “Inkluziv O‘zbekiston” loyihasi doirasida Shahrisabz, Qarshi, Buxoro, Xiva shaharlariga sayohatlar tashkil etildi. 11-oktyabr –Xalqaro qizlar kuni doirasidagi tadbirlar samarali tashkil etildi, shuningdek butun dunyoda qizlarning hayot tarzi, yashash sharoitlari, huquq va erkinliklari bilan bog‘liq holatlar o‘rganildi. Ijtimoiy himoyaha muhtoj nogironligi mavjud davolanishga muhtoj yoshlar xolidan xabar olinib, ularning davolanish xarajatlari qoplab berilishiga ko‘maklashildi 2022-yilda ilk marotaba nogironligi bo‘lgan yoshlar o‘rtasida “Besh tashabbus paralimpiadasi” o‘tkazildi, 3-dekabr –Xalqaro nogironlar kuni munosabati bilan “Chegarasiz nogironlarni qo‘llab-quvvatlash bo‘yicha 2- xalqaro forum tashkil etildi ”, O‘zbekiston Respublikasi Prezidentining 2022 yil  7-martdagi  “Oila va xotin-qizlarni tizimli qo‘llab-quvvatlashga doir ishlarni yanada jadallashtirish  chora-tadbirlari to‘g‘risida”gi PF-87-sonli farmonining  109 bandi ijrosini taminlash maqsadida joylarda xotin-qizlar o‘rtasida zo‘ravonlikni oldini olish, mahallalar kesimida profilaktik hisobda turgan xotin-qizlarning muammolarini o‘rganish, tarbiyasi og‘ir voyaga yetmagan qizlar va ularning oilalaridagi muammolariga yechim topish maqsadida ijtimoiy-psixologik yordam ko‘rsatilib kelinmoqda.  O‘zbekiston Respublikasi Vazirlar Mahkamasining “Nogironligi bo‘lgan yoshlarni qo‘llab quvvatlash” bo‘yicha 2022-yil 21-iyundagi 341-sonli qarori asosida Nogironligi bo‘lgan yoshlarga subsidiya olishlariga ko‘maklashildi, “Men donorman” qon topshirish xayriya aksiyalari tashkillashtirilib kelinmoqda. “Sening tashabbusing - sening kelajaging” loyihasi doirasida viloyatda “Qizlar ovozi” koordinatorlari tanlovi tashkil etildi. Sh.Xamidova o‘tgan yillar davomida 2016-yil “Mustaqillikning 25 yilligi” hamda 2017-yilda “O‘zbekiston Respublikasi Konsitusiyasining 25 yilligi” hamda 2022-yilda “O‘zbekiston Respublikasi Konsitusiyamizning 30 yilligi” ko‘krak nishoni bilan taqdirlangan.",
+        "img" : "https://volontyor.uz/media/experts/images/2024/01/Sayt_rasmlari-05.jpg"
+      },
+      {
+        "id" : "8",
+        "name" : "Sa'dullayev Alisher Zafar o'g'li",
+        "position" : "Oʻzbekiston Respublikasi Yoshlar siyosati va sport vazirining birinchi oʻrinbosari",
+        "info" : "Alisher Zafar oʻgʻli Saʼdullayev (1994-yil 11-iyulda tugʻilgan) — Oʻzbekiston Respublikasi Yoshlar siyosati va sport vazirining birinchi oʻrinbosari, Oliy Majlisi Senatining aʼzosi, Yoshlar ishlari agentligi direktori va Oʻzbekiston shaxmat federatsiyasining raisi. 2021-yil Mehnat shuhrati ordeni bilan taqdirlangan.  Alisher Saʼdullayev 2017-yilda Oʻzbekiston prezidenti Shavkat Mirziyoyevning eʼtiboriga tushgan va talabalik chogʻida Xalq taʼlimi vazirining yoshlar masalalari boʻyicha oʻrinbosari lavozimiga prezidentning taklifi bilan tayinlangan. Keyinchalik turli yillarda Yoshlar ittifoqi raisining birinchi oʻrinbosari (2018—2019), raisi (2019—2020), Oʻzbekiston prezidentining yoshlar, fan, taʼlim, sogʻliqni saqlash, madaniyat va sport masalalari boʻyicha maslahatchisining birinchi oʻrinbosari (2019—2020) lavozimlarida faoliyat yuritgan. Alisher Saʼdullayev 2019-yilda Oʻzbekistonning yoshlar siyosatidagi pozitsiyasi va yoshlarga yaratilayotgan imkoniyatlar mavzusida Birlashgan Millatlar Tashkiloti minbarida nutq soʻzlagan. 2021-yilda Germaniyaning München shahri kengashi bosh direktori Clemens Baumgärtner hamda „One Young World“ dasturi direktori Matthew Bellshow tashabbuslari bilan Münchenda oʻtkazilgan „One Young World“ sammitida ishtirok etdi[1].  Alisher Saʼdullayev 2022-yilning 8-avgust kuni Chennay shahrida oʻtkazilgan FIDEning navbatdagi Kongressida taqdimot qildi hamda 2026-yilgi Olimpiada mezbonligi uchun Oʻzbekiston nomzodi delegatlar tomonidan maʼqullandi[2  ",
+        "img" : "https://volontyor.uz/media/experts/images/2024/01/Sadullayev-06.jpg"
+      },
+      {
+        "id" : "9",
+        "name" : "Kattaxonova Dilnozaxon Sobir qizi",
+        "position" : "Yoshlar ishlari agentligi direktorining birinchi o'rinbosari",
+        "info" : "Dilnozaxon Kattaxonova (toʻliq ismi: Kattaxonova Dilnozaxon Sobir qizi) – mustaqil tadqiqotchi, siyosiy fanlar bo’yicha falsafa doktori (PhD). 2020-yildan buyon Oʻzbekiston yoshlar ishlari agentligi direktori oʻrinbosari[1]. „Xalqlar doʻstligi“ koʻkrak nishoni va „Doʻstlik“ ordeni sohibasi.  Hayot  1991-yil 2-iyulda Toshkent shahrida tavallud topgan.  2014-yilda Mirzo Ulugʻbek nomidagi Oʻzbekiston Milliy universitetining bakalavriatini bitirgan.  2016-yilda Mirzo Ulugʻbek nomidagi Oʻzbekiston Milliy universitetining magistraturasini tamomlagan.  2014—2016-yillarda „Kamolot“ yoshlar ijtimoiy harakati Markaziy Kengashining Ijtimoiy-huquqiy loyihalar boʻlimi yetakchi mutaxassisi lavozimida ishlagan.  2016—2017-yillarda Oʻzbekiston Xotin-qizlar qoʻmitasi Xalqaro aloqalarni rivojlantirish va nodavlat-notijorat tashkilotlarni qoʻllab-quvvatlash boʻlimi bosh mutaxassisi lavozimida ishlaga  ",
+        "img" : "https://volontyor.uz/media/experts/images/2024/01/Dilnoza-07.jpg"
+      },
+      {
+        "id" : "10",
+        "name" : "Aralbayeva Bibijan Kuralbayevna",
+        "position" : "O‘zbekiston Respublikasi Yoshlar ishlari agentligi Yoshlarni vatanparvarlik ruhida tarbiyalash va volontyorlikni rivojlantirish bo‘limi bosh mutaxassisi",
+        "info" : "1986 yil Qoraqalpog‘iston Respublikasida  tug‘ilgan, ma'lumoti - oliy  2007 yili “Ziyoli yoshlar” intellektual klubi a’zosi sifatida “Zakovat” intellektual uyining O‘zbekiston Respublikasi bosqichida o‘z jamoasi bilan g‘olib bo‘lib, “Zakovat” kubogini qo‘lga kiritgan. ishda o‘z hissasini qo‘shgan  2012 yil “Yosh tadbirkor” konsultativ markazi koordinatori bo‘lib ishlagan davrida “Mening biznes g‘oyam”, “Yosh tadbirkor yurtga madadkor”, “Yosh tadbirkor – el-yurt tayanchi” loyihalari doirasida 20 nafar kollej bitiruvchisi va 10 nafar yoshlarning biznes loyihalarini amalga oshirish maqsadida tijorat banklaridan kreditlar olishida amaliy yordamlar ko‘rsatgan. Shuningdek, 4 nafar bizne  2012 yil “Ma’naviyat targ‘ibotchilari” guruhini tashkil etib, bu guruhga 50 dan ortiq yoshlarni qamrab olgan va mazkur guruh bilan “Biz sog‘lom turmush tarzi tarafdorimiz”, “Yoshlar “ommaviy madaniyat”ning salbiy illatlariga qarshi”, “Diniy ekstremizm va missionerlikning oldini olamiz”, “Huquqiy savodxon yoshlar - kelajak egalari”, “Ajdodlar merosini o‘rganamiz”, “Internet va yoshlar” kabi mavzularda targ‘ibot tadbirlarini Qoraqalpog‘iston Respublikasining barcha shahar, tumanlarida olib borgan  2014-2015 yillarda Birlashgan millatlar tashkilotining UNWOMEN ayollar tashkiloti va O‘zbekiston xotin-qizlar qo‘mitasi bilan hamkorlikdagi “Qoraqalpog‘iston Respublikasi Mo‘ynoq tumanida qishloq joylarida istiqomat qiluvchi xotin-qizlarning iqtisodiy bilim va ko‘nikmalarini rivojlantirish bo‘yicha treninglar o‘tkazish, mikrokreditlar olishda yordam ko‘rsatuvchi guruhlar tashkil etish bo‘yicha dastur ishlab chiqish va amalga oshirish” loyihasining bosh menedjeri sifatida tumandagi “Madeli”, “Bozatao‘” va “Tikozek” ovul fuqarolar yig‘inidagi 130 nafar xotin-qizlarga tijorat banklaridan mikrokreditlar ajratilishida, xotin-qizlarning bandligini ta’minlashda o‘z tashabbuskorligini ko‘rsatga  ",
+        "img" : "https://volontyor.uz/media/experts/images/2024/01/Elyor-08.jpg"
+      },
+      {
+        "id" : "11",
+        "name" : "Hoshimov Zafar Komilovich",
+        "position" : "Tarkibiga Korzinka.uz, Korzinka Diskont, Smart doʻkonlari kiruvchi „Anglesey Food“ MChJ XK asoschisi",
+        "info" : "1968-yil 29-iyunda Toshkent shahrida tug'ilgan  Faoliyat 1992-yilda Toshkent universitetida ehtimollar nazariyasi va matematik statistika boʻyicha taʼlim olgan. 1992-yildan 1994-yilgacha Sasseks universitetida (Brayton, Angliya) oʻqigan. 1992-yildan 1995-yilgacha „UzEX“ masʼuliyati cheklangan jamiyati bosh direktori sifatida faoliyat yuritgan. 1995-yildan 1997-yilgacha „Balton Trading (Asia)“ shirkatining biznes rivojlanishi boʻyicha direktor lavozimida faoliyat yuritgan[3]. 1996-yil dekabrda „Anglesey Food“ brendiga asos soldi. 1997-yilda tadbirkor Anglesey Food brendi ostida ilk doʻkonni ochdi va Oʻzbekistonda supermarketlar tarmogʻi rivojlanishi uchun poydevor qoʻydi[4][5][6]. 2005-yilda tarmoq rebrendingi amalga oshirildi. Shu vaqtdan boshlab, supermarketlar „korzinka.uz“ brendi ostida rivojlana boshladi. 2010-yilda kompaniya Smart uy doʻkonlarini, 2016-yilda esa korzinka.uz Diskont ulgurji savdo supermarketlarini alohida boʻlimlarga boʻlib, xizmat koʻrsatish shakllarini xilma-xillashtirishni boshladi[7 ",
+        "img" : "https://volontyor.uz/media/experts/images/2024/01/Zafar-09.jpg"
+      },
+      {
+        "id" : "12",
+        "name" : "Abduvaxidova Nargiza Akbarjonovna",
+        "position" : "“Ipak yo‘li” turizm va madaniy meros xalqaro universiteti Talabalar bilan mahallabay ishlash va tadbirlar bo‘limi boshlig‘i",
+        "info" : "Abduvaxidova Nargiza Akbarjonovna 1978 yilda Samarqand viloyati Kattaqo‘rg‘on shahrida tavallud topgan, millati o‘zbek, ma’lumoti oliy, 2000 y. Samarqand davlat Chet tillar  instituti bakalavriat (nemis filologiyasi), 2008 y. Samarkand davlat universiteti magistratura (tarixchi), ma’lumoti bo‘yicha mutaxassisligi: tarixshunos,  muzeyshunoslik, konservatsiya va badiiy boyliklarni saqlash 2003 – 2008 yillar Samarqand davlat universiteti Xalqaro aloqalar bo‘limi tarjimon-koordinatori,  2008 - 2009 yillar Samarqand davlat universiteti ilmiy bo‘limi uslubchisi, 2009 - 2016 yillar Samarqand davlat universiteti xalqaro aloqalar bo‘limi boshlig‘i, 2016 - 2017 yillar Samarqand davlat universiteti Ilmiy Tadqiqot Markazi patentshunosi,  2018 - 2019 yillar “Ipak yo‘li” turizm xalqaro universiteti Kadrlar bo‘limi inspektori“Ipak yo‘li” turizm xalqaro universiteti Kadrlar bo‘limi inspektori, 2019- 2021 yillar “Ipak yo‘li” turizm xalqaro universiteti jamoatchilik bilan ishlash  bo‘limi (PR) boshlig‘i lavozimida ishlagan. 2021 yil maydan “Ipak yo‘li” turizm xalqaro universiteti Yoshlar bilan mahallabay  ishlash va tadbirlar bo‘limi boshlig‘i lavozimida faoliyat yuritayotgan Abduvaxidova Nargiza Akbardjonovna tomonidan jamiyatda ma’naviy-ma’rifiy ishlarni amalga oshirish, yuksak ijtimoiy-ma’naviy muhitni shakllantirish borasida quyidagi ishlar amalga oshirilga ",
+        "img" : "https://volontyor.uz/media/experts/images/2024/01/Nargiza-11.jpg"
+      }
+
+    ]
+}
