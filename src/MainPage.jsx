@@ -23,26 +23,26 @@ import operator from "../public/icon/bank.png";
 
 //open icon
 
-import openIcon from "../public/icon/open.png"
+import openIcon from "../public/icon/open.png";
 
 //news
 import clock from "../public/icon/wall-clock.png";
 import date from "../public/icon/calendar.png";
 
 export default function MainPage() {
-
   //volontyor
   const [mal, setMal] = useState([]);
 
-
   //news
   const [news, setNews] = useState([]);
-
 
   //experts
 
   const [experts, setExperts] = useState([]);
 
+  //sponsors
+
+  const [sponsors, setSponsors] = useState([]);
 
   //volontyors
   useEffect(() => {
@@ -74,9 +74,19 @@ export default function MainPage() {
       });
   }, []);
 
+  //sponsors
+  useEffect(() => {
+    fetch("http://localhost:3000/sponsors")
+      .then((response) => response.json())
+      .then((sponsors) => setSponsors(sponsors))
+      .catch((error) => {
+        console.error("Xatolik:", error);
+      });
+  }, []);
+
   return (
     <div className="MainPage">
-      <div className="top">
+      <div className="topPage">
         <article>
           <p>&#39;&#39;Inson uchun xayriya qilish loyihasi&#39;&#39;</p>
           <p>
@@ -126,14 +136,11 @@ export default function MainPage() {
       </div>
 
       <div className="two">
+        <div className="one">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7333008.992184648!2d59.30061593614458!3d40.939645982461634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b20a5d676b1%3A0xca0a6dad7e841e20!2sO%CA%BBzbekiston!5e0!3m2!1suz!2s!4v1729090211634!5m2!1suz!2s"></iframe>
-
+        </div>
         <div className="three">
-          {/* <p className="topVolontyor">Volontyorlar</p> */}
-
           <div>
-            {/* <input className="search" type="text" placeholder="Volontyor qidiruvi..."/> */}
-
             <p className="p">VOLONTYORLAR</p>
 
             <article className="important">
@@ -169,24 +176,30 @@ export default function MainPage() {
         <div className="box">
           <img className="icon" src={volt} alt="" />
           <article>
+            <div>
             <p>26,422</p>
             <p>Volontyorlar</p>
+            </div>
           </article>
         </div>
 
         <div className="box">
           <img className="icon" src={org} alt="" />
           <article>
+            <div>
             <p>61</p>
             <p>Tashkilotlar</p>
+            </div>
           </article>
         </div>
 
         <div className="box">
           <img className="icon" src={project} alt="" />
           <article>
+            <div>
             <p>31</p>
             <p>Loyihalar</p>
+            </div>
           </article>
         </div>
       </div>
@@ -195,7 +208,7 @@ export default function MainPage() {
         <div className="box">
           <article>
             <p>Volontyor bo‘lishni xohlaysizmi?</p>
-            <p>
+            <p className=".p">
               Agar siz loyiha yoki tashkilotga yordam berishni istasangiz, bu
               yerga o‘ting
             </p>
@@ -230,7 +243,7 @@ export default function MainPage() {
             return (
               <div className="box" key={news.id}>
                 <div className="topNews">
-                  <img src={news.img} alt="" />
+                  <img className="imgOne" src={news.img} alt="" />
                   <p className="name">{news.name}</p>
                 </div>
                 <h1 className="h1">{news.team}...</h1>
@@ -254,19 +267,31 @@ export default function MainPage() {
       <div className="experts">
         <h1 className="topInfo">Ezgulik elchilari va ekspertlar</h1>
         <div className="bottom">
-          {
-            experts.map((experts) => {
-              return(
-                <div key={experts.id} className="boxExpert">
-                  <img className="expertImg" src={experts.img} alt="" />
-                  <span>
-                    <img src={openIcon} alt="" />
-                    <h1>{experts.name}</h1>
-                  </span>
-                </div>
-              )
-            })
-          }
+          {experts.map((experts) => {
+            return (
+              <div key={experts.id} className="boxExpert">
+                <img className="expertImg" src={experts.img} alt="" />
+                <span>
+                  <img src={openIcon} alt="" />
+                  <h1>{experts.name}</h1>
+                </span>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="sponsors">
+        <h1 className="topSponsors">Homiylar</h1>
+
+        <div className="bottom">
+          {sponsors.map((sponsors) => {
+            return (
+                <a key={sponsors.id} className="sponsor" href={sponsors.link} target="__blanc">
+                  <img src={sponsors.logo} alt="" />
+                </a>
+            );
+          })}
         </div>
       </div>
     </div>

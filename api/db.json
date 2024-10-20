@@ -784,5 +784,104 @@
         "img" : "https://volontyor.uz/media/experts/images/2024/01/Nargiza-11.jpg"
       }
 
+    ],
+    "sponsors" : [
+      {
+        "id" :"1",
+        "name" : "Asaka Bank",
+        "logo" : "https://uic.group/media/Partners/Asakabank.svg",
+        "link" : "https://www.asakabank.uz/uz/physical-persons/home"
+      },
+      {
+        "id" :"2",
+        "name" : "Avloniy",
+        "logo" : "https://uic.group/media/Partners/Avloniy.svg",
+        "link" : "https://avloniy.uz/"
+      },
+      {
+        "id" :"3",
+        "name" : "Experes 24",
+        "logo" : "https://uic.group/media/Partners/Express_24.svg",
+        "link" : "https://express24.uz/"
+      },
+      {
+        "id" :"4",
+        "name" : "IT Park",
+        "logo" : "https://uic.group/media/Partners/IT_park.svg",
+        "link" : "https://it-park.uz/"
+      },
+      {
+        "id" :"5",
+        "name" : "Milliy Gvardiya",
+        "logo" : "https://uic.group/media/Partners/milliy-gvardiya_copy_copy.svg",
+        "link" : "https://www.milliygvardiya.uz/"
+      },
+      {
+        "id" :"6",
+        "name" : "UIC ",
+        "logo" : "https://uic.group/icons/logo_big_white.svg",
+        "link" : "https://uic.group/"
+      },
+      {
+        "id" :"7",
+        "name" : "PM",
+        "logo" : "https://uic.group/media/Partners/PM.svg",
+        "link" : "https://projectmanagers.uz/"
+      },
+      {
+        "id" :"8",
+        "name" : "Tsue",
+        "logo" : "https://uic.group/media/Partners/TDIU.svg",
+        "link" : "http://tsue.uz/"
+      },
+      {
+        "id" :"9",
+        "name" : "Uzcard",
+        "logo" : "https://uic.group/media/Partners/Uzcard.svg",
+        "link" : "https://www.uzcard.uz/uz"
+      },
+      {
+        "id" :"10",
+        "name" : "TMC",
+        "logo" : "https://uic.group/media/Partners/TMCI_eaFjgNO.svg",
+        "link" : "https://tmci.uz/"
+      },
+      {
+        "id" :"11",
+        "name" : "CSC",
+        "logo" : "https://uic.group/media/Partners/CSC_logo_light_JjM0jSn.svg",
+        "link" : "https://csec.uz/ru/"
+      },
+      {
+        "id" :"12",
+        "name" : "Uz Club",
+        "logo" : "https://uic.group/media/Partners/uzclub.svg",
+        "link" : "https://uzbekistans.club/"
+      },
+      {
+        "id" :"13",
+        "name" : "Zor Tv",
+        "logo" : "https://uic.group/media/Partners/zor_tv_colored.svg",
+        "link" : "https://zortv.uz/"
+      },
+      {
+        "id" :"14",
+        "name" : "Paylov",
+        "logo" : "https://uic.group/media/Partners/paylov_color.svg",
+        "link" : "https://paylov.uz/"
+      },
+      {
+        "id" :"15",
+        "name" : "Sello",
+        "logo" : "https://uic.group/media/Partners/SELLO.svg",
+        "link" : "https://sello.uz/"
+      },
+      {
+        "id" :"16",
+        "name" : "Ipotika Bank",
+        "logo" : "https://uic.group/media/Partners/ipotekabank_XVMESno.svg",
+        "link" : "https://www.ipotekabank.uz/"
+      }
+      
     ]
 }

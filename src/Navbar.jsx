@@ -25,6 +25,10 @@ export default function Navbar() {
           <li>Yangiliklar</li>
         </ul>
 
+        <button>
+          dark
+        </button>
+
         <button className="btnOne">
           <img src={enter} alt="" />
           Volontyor bulish
