@@ -46,9 +46,9 @@ export default function MainPage() {
 
   //volontyors
   useEffect(() => {
-    fetch("http://localhost:3000/volunteer")
+    fetch("https://cuqrwqnnguneymulgghg.supabase.co/storage/v1/object/public/zgfor/db.json")
       .then((response) => response.json())
-      .then((data) => setMal(data))
+      .then((data) => setMal(data.volunteer))
       .catch((error) => {
         console.error("Xatolik:", error);
       });
@@ -56,9 +56,9 @@ export default function MainPage() {
 
   //news
   useEffect(() => {
-    fetch("http://localhost:3000/news")
+    fetch("https://cuqrwqnnguneymulgghg.supabase.co/storage/v1/object/public/zgfor/db.json")
       .then((response) => response.json())
-      .then((news) => setNews(news))
+      .then((news) => setNews(news.news))
       .catch((error) => {
         console.error("Xatolik:", error);
       });
@@ -66,9 +66,9 @@ export default function MainPage() {
 
   //experts
   useEffect(() => {
-    fetch("http://localhost:3000/expert")
+    fetch("https://cuqrwqnnguneymulgghg.supabase.co/storage/v1/object/public/zgfor/db.json")
       .then((response) => response.json())
-      .then((news) => setExperts(news))
+      .then((news) => setExperts(news.expert))
       .catch((error) => {
         console.error("Xatolik:", error);
       });
@@ -76,9 +76,9 @@ export default function MainPage() {
 
   //sponsors
   useEffect(() => {
-    fetch("http://localhost:3000/sponsors")
+    fetch("https://cuqrwqnnguneymulgghg.supabase.co/storage/v1/object/public/zgfor/db.json")
       .then((response) => response.json())
-      .then((sponsors) => setSponsors(sponsors))
+      .then((sponsors) => setSponsors(sponsors.sponsors))
       .catch((error) => {
         console.error("Xatolik:", error);
       });
