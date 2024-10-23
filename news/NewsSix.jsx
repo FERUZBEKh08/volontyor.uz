@@ -29,12 +29,12 @@ export default function ExpertOne() {
           <h1 className="teamNew">{mal.team}</h1>
           <p>{mal.info}</p>
 
-          <a target="__blanc" href={mal.link}>Batafsil Malumot</a>
+          {/* <a target="__blanc" href={mal.link}>Batafsil Malumot</a> */}
         </div>
       }
 
       <div className="other">
-        
+
       </div>
     </div>
   );
