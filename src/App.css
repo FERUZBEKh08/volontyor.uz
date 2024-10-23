@@ -1269,9 +1269,7 @@ nav ul li:hover::after {
 }
 
 .expertMal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
   padding: 20px;
   padding-bottom: 500px;
   padding-top: 100px;

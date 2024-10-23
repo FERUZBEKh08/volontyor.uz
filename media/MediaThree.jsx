@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
- 
+import { Link } from "react-router-dom";
+
+
 export default function ExpertOne() {
   const [mal, setMal] = useState([]);
 
@@ -16,12 +18,15 @@ export default function ExpertOne() {
 
   return (
     <div className="newsIn">
+      <Link to="/school" className="back">
+        <p>&lt;&lt; Orqaga</p>
+      </Link>
       {
         <div key={mal.id} className="box">
-            <h1 className="nameNew">{mal.name}</h1>
-            <img src={mal.img} alt="" />
-            <h1 className="teamNew">{mal.team}</h1>
-            <p>{mal.info}</p>
+          <h1 className="nameNew">{mal.name}</h1>
+          <img src={mal.img} alt="" />
+          <h1 className="teamNew">{mal.team}</h1>
+          <p>{mal.info}</p>
         </div>
       }
     </div>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import link from "../public/icon/link.png";
 import from from "../public/icon/black-placeholder-variant.png";
@@ -19,6 +20,9 @@ export default function ExpertOne() {
 
   return (
     <div className="expertMal">
+          <Link to="/" className="back">
+            <p>&lt;&lt; Orqaga</p>
+          </Link>
       {
         <div key={expert.id} className="box">
 
@@ -26,7 +30,11 @@ export default function ExpertOne() {
             <img src={expert.img} alt="" />
             <h2 className="name">{expert.name}</h2>
             <p>{expert.position}</p>
-            <a className="btnSentMessages" href={expert.link} target={expert.link}>
+            <a
+              className="btnSentMessages"
+              href={expert.link}
+              target={expert.link}
+            >
               <button className="">Xabar yuborish</button>
             </a>
           </div>
