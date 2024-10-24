@@ -9,7 +9,7 @@ export default function About() {
   return (
     <div className="aboutPage">
       <h1 className="top">Biz haqimizda</h1>
-      <p>
+      <p className="p">
         Volontyorlik - bu yerda har bir kishi uz kuchiga investitsiya qilishga
         tayyor, vaqt, bilim va konikmalar ixtiyoriy ravishda tanlangan yaxshi
         ish. Shirin Abidova, uzbekiston volontyorlari assotsiyatsiyasi

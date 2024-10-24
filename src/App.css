@@ -1470,9 +1470,12 @@ nav ul li:hover::after {
 .aboutPage .top {
   padding: 20px 0px;
 }
-.aboutPage p {
+.aboutPage .p {
   font-size: 20px;
   line-height: 30px;
+  padding: 20px;
+  background-color: #E0E0E0;
+  border-radius: 20px;
 }
 .aboutPage .bottom {
   padding-top: 30px;
