@@ -127,7 +127,9 @@ export default function MainPage() {
             qulay va qo‘llab-quvvatlovchi muhit yaratish
           </h1>
 
-          <button className="btnThree">Biz haqimizda</button>
+          <Link to="/about">
+            <button className="btnThree">Biz haqimizda</button>
+          </Link>
         </div>
 
         <div className="box">
@@ -137,7 +139,9 @@ export default function MainPage() {
             oching, dunyo volontyorlari katta oilasining bir qismi bo‘ling
           </h1>
 
+          <Link to="/Be">
           <button className="btnThree">A’zo bo‘lish</button>
+          </Link>
         </div>
 
         <div className="box">
@@ -147,7 +151,9 @@ export default function MainPage() {
             qaratilgan
           </h1>
 
-          <button className="btnThree">Bizning loyihalar</button>
+          <Link to="/projects">
+            <button className="btnThree">Bizning loyihalar</button>
+          </Link>
         </div>
       </div>
 
@@ -229,7 +235,10 @@ export default function MainPage() {
               yerga o‘ting
             </p>
 
-            <button className="btnFour">Yordam berishni xohlayman</button>
+              <Link to="./be">
+              <button className="btnFour">Yordam berishni xohlayman</button>
+
+              </Link>
           </article>
           <img src={manGranma} alt="" />
         </div>
@@ -242,46 +251,48 @@ export default function MainPage() {
               uting
             </p>
 
-            <button className="btnFour">
-              <span></span>
-              <p>Volontyorlarni topish</p>
-            </button>
+            <Link to="/volunteers">
+              <button className="btnFour">
+                <span></span>
+                <p>Volontyorlarni topish</p>
+              </button>
+            </Link>
           </article>
           <img src={operator} alt="" />
         </div>
       </div>
 
       <div className="news">
-        <h1 className="p">So‘nggi yangiliklar</h1>
+        <h1 className="p mall-page">So‘nggi yangiliklar</h1>
 
         <div className="bottom">
           {news.map((news) => {
             return (
-                <div key={news.id} className="box" >
-                  <div className="topNews">
-                    <img className="imgOne" src={news.img} alt="" />
-                    <p className="name">{news.name}</p>
-                  </div>
-                  <h1 className="h1">{news.team}...</h1>
-                  <Link to={news.page} className="span">
-                    <div className="date">
-                      <img src={date} alt="" />
-                      <h1>{news.date}</h1>
-                    </div>
-
-                    <div className="clock">
-                      <img src={clock} alt="" />
-                      <h1>{news.clock}</h1>
-                    </div>
-                  </Link>
+              <div key={news.id} className="box">
+                <div className="topNews">
+                  <img className="imgOne" src={news.img} alt="" />
+                  <p className="name">{news.name}</p>
                 </div>
+                <h1 className="h1">{news.team}...</h1>
+                <Link to={news.page} className="span">
+                  <div className="date">
+                    <img src={date} alt="" />
+                    <h1>{news.date}</h1>
+                  </div>
+
+                  <div className="clock">
+                    <img src={clock} alt="" />
+                    <h1>{news.clock}</h1>
+                  </div>
+                </Link>
+              </div>
             );
           })}
         </div>
       </div>
 
       <div className="experts">
-        <h1 className="topInfo">Ezgulik elchilari va ekspertlar</h1>
+        <h1 className="topInfo mall-page">Ezgulik elchilari va ekspertlar</h1>
         <div className="bottom">
           {experts.map((experts) => {
             return (
@@ -300,7 +311,7 @@ export default function MainPage() {
       </div>
 
       <div className="sponsors">
-        <h1 className="topSponsors">Homiylar</h1>
+        <h1 className="topSponsors mall-page">Homiylar</h1>
 
         <div className="bottom">
           {sponsors.map((sponsors) => {
@@ -319,7 +330,7 @@ export default function MainPage() {
       </div>
 
       <div className="commentsPage">
-        <h1 className="topCommentsPage">Izohlar</h1>
+        <h1 className="topCommentsPage mall-page">Izohlar</h1>
         <Comments />
       </div>
     </div>

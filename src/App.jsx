@@ -77,12 +77,30 @@ import ProjectsSix from "../project.jsx/ProjectsSixIn";
 
 import News from "../pages/News";
 
+//volonteer
+
+import Volonteer from "../pages/Volonteer";
+import VolonteerTwo from "../pages/VolonteerTwo";
+import VolonteerThree from "../pages/VolunteerThree";
+import VolonteerFour from "../pages/VolunteerFour";
+import VolonteerFive from "../pages/VolunteerFive";
+
+//akkaunt 
+// import Create from "../pages/Create";
+
+
+//slider
+import 'slick-carousel/slick/slick.css'; 
+import 'slick-carousel/slick/slick-theme.css';
+import Be from "../pages/Be";
+
+
 
 
 export default function App() {
   const routes = createBrowserRouter(
     createRoutesFromElements(
-      <Route element={<RootLayoute />}> {/* Komponentni to'g'ri chaqirdik */}
+      <Route element={<RootLayoute />}>
         <Route path="/" element={<MainPage />} />
       
         <Route path="/experts/1" element={<ExpertOne/>} />
@@ -139,6 +157,15 @@ export default function App() {
         <Route path="/news" element={<News/>} />
 
 
+        <Route path="/volunteers" element={<Volonteer/>} />
+        <Route path="/volunteers/2" element={<VolonteerTwo/>} />
+        <Route path="/volunteers/3" element={<VolonteerThree/>} />
+        <Route path="/volunteers/4" element={<VolonteerFour/>} />
+        <Route path="/volunteers/5" element={<VolonteerFive/>} />
+
+        <Route path="/Be" element={<Be/>} />
+
+      
         <Route path="*" element={<NotFount/>} />
       </Route>
     )

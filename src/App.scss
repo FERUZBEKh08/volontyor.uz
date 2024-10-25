@@ -7,10 +7,13 @@ body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     position: relative;
     min-height: 100vh;
+    background-color: var(--bg-color);
+    transition: all 0.3s;
 }
 
 ::-webkit-scrollbar {
-    width: 12px; /* Vertikal scrollbar kengligi */
+    width: 12px;
+    z-index: 1;
   }
   
   ::-webkit-scrollbar-track {
@@ -18,10 +21,21 @@ body{
     padding: 0px 10px;
   }
   
-  /* Scrollbarning harakatlanuvchi qismi */
   ::-webkit-scrollbar-thumb {
+    z-index: 1;
     background: rgb(194,194,194);
     border-radius: 10px;
+  }
+
+  .darkmode{
+    background-color: #00b141;
+    color: var(--letters);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    cursor: pointer;
   }
 
 .back{
@@ -32,7 +46,7 @@ body{
     cursor: pointer;
     font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: var(--letters);
     width: 140px;
     height: 1px;
     &:hover{
@@ -146,12 +160,41 @@ body{
 }
 
 :root{
+    --bg-color  : #ffffff;
     --primary-color:#00B140;
     --select-color:aqua;
     --select-back:rgb(255, 187, 0);
 
     --btn-oneColor:#00B140;
     --btn-twoColor:rgb(253,170,14);
+
+    --border : white;
+
+    --malpage : black; 
+
+    --letters : black;
+
+    --oneH1 : gray;
+    
+    --filter :     filter: grayscale(100%);    
+}
+
+.dark-mode {
+    --bg-color  : #333;
+    --color : white;
+    --boder : #00B140;
+    
+    --malpage: white;
+    
+    --letters : rgb(249, 249, 249);
+    
+    --oneH1 : white;
+    
+    --filter :     filter: brightness(0) invert(1);
+}
+
+.malpage{
+    background-color: var(--malpage);
 }
 
 .container{
@@ -167,6 +210,10 @@ body{
     z-index: 9999999;
     background-color: white;
     backdrop-filter: blur(10px);
+}
+
+.link{
+    text-decoration: none;
 }
 
 nav{
@@ -252,23 +299,104 @@ nav{
 
 }
 
+.medianav{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+    background-color: var(--bg-color);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999999999999999999999999;
+    article{
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            .span{
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                p{
+                    color: var(--letters);
+                }
+            }
+            img{
+                margin: auto;
+                filter: brightness(0) saturate(100%) invert(49%) sepia(85%) saturate(463%) hue-rotate(89deg) brightness(94%) contrast(100%);
+            }
+    }
+}
+
+@media(max-width:1189px){
+    .medianav{
+        display: flex;
+        img{
+            width: 50px;
+        }
+    }
+}
+
+@media(max-width:514px){
+    .medianav{
+        display: flex;
+        .span{
+            img{
+                width: 40px;
+            }
+            p{
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+.topMedia{
+    display: none;
+    z-index: 9999999999999999999;
+}
+
+@media(max-width:1189px){
+    .topMedia{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 900px;
+            gap: 20px;
+        }
+        img{
+            width: 70px;
+        }
+    }
+}
+
 .divNavBottom{
-    position: absolute;
     width: 100%;
     bottom: 0;
     left: 0;
-    background-color: #E0E0E0;
 }
 
-.navBottom{
+.navBottom{ 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    line-height: 70px;
+    line-height: 50px;
     max-width:1410px;
     margin: auto;
     padding: 20px 20px;
-    background-color: #E0E0E0;
     .logo{
         cursor: pointer;
         transition: all 0.5s;
@@ -288,6 +416,7 @@ nav{
             position: relative;
             font-weight: 500;
             transition: all 0.3s;
+            color:var(--letters);
             &:hover{
                 color: #00B140;
                 transform: translateY(-5px);
@@ -300,14 +429,18 @@ nav{
         flex-wrap:  wrap;
         align-items: center;
         gap: 50px;
+        z-index: 999999;
         .smm{
             display: grid;
             grid-gap: 20px;
 
             div{
                 border-radius: 50%;
-                display: flex;
                 transition: all 0.3s;
+                a{
+                    display: flex;
+                    transition: all 0.3s;   
+                }
                 &:hover{
                      transform: scale(1.3);
                     img{
@@ -376,7 +509,11 @@ nav{
 }
 
 
-@media(max-width:1088px){
+
+@media(max-width:1189px){
+    .divNavBottom{
+        padding-bottom: 100px;
+    }
     .navTop{
         display: none;
     }
@@ -385,22 +522,65 @@ nav{
     }
 }
 
+@media(max-width:600px){
+    .divNavBottom{
+        padding-bottom: 100px;
+    }
+    .navTop{
+        display: none;
+    }
+    .navBottom{
+        display: flex;
+        ul{
+            li{
+                font-size: 15px;
+            }
+        }
+        .logo{
+            width: 100px;
+        }
+    }
+}
+
+@media(max-width:476px){
+    .divNavBottom{
+        padding-bottom: 100px;
+        .logo{
+            display: none;
+        }
+    }
+    .navTop{
+        display: none;
+    }
+    .navBottom{
+        display: flex;
+        ul{
+            li{
+                font-size: 15px;
+            }
+        }
+        .logo{
+            width: 100px;
+        }
+    }
+}
+
 .MainPage{
     display: grid;
     grid-gap: 50px;
     margin-top: 100px;
+    padding: 0px 20px;
     padding: 20px;
-    padding-bottom: 500px;
     .topPage{
         display: flex;
         align-items: center;
-        background-image: url(../public/img/xayriya.jpg);
         width: 100%;
         height: 700px;
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
         border-radius: 50px;
+        background-image: url(../public/img/xayriya.jpg);
         &::before{
             content: "";
             width: 100%;
@@ -408,7 +588,7 @@ nav{
             position: absolute;
             background-color: #00b14163;
             z-index: 0;
-            border-radius: 50px;
+            border-radius: 50px;    
         }
         article{
             display: grid;
@@ -505,7 +685,7 @@ nav{
             h1{
                 font-size: 22px;
                 font-weight: 500;
-                color: gray;
+                color: var(--oneH1);
             }
         }
     }
@@ -577,12 +757,14 @@ nav{
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    background-color: white;
+                    background-color: var(--other);
                     width: 600px;
                     height: 30px;
                     padding: 30px 15px;
                     margin: auto;
                     text-align: start;
+                    border: 1px solid var(--border);
+                    border-radius: 10px;
                     &:hover{
                         background-color: rgba(128, 128, 128, 0.3);
                     }
@@ -592,9 +774,14 @@ nav{
                         gap: 10px;
                         .nsa{
                             line-height: 25px;
+                            h1{
+                                font-weight: 500;
+                                color: var(--letters);
+                            }
                             img{
                                 width: 200px;
                                 height: 200px;
+                                fill: red; /* Rangni CSS orqali o'zgartirish */
                             }
                             .name{
                                 color: #00b141;
@@ -611,6 +798,10 @@ nav{
                         display: flex;
                         align-items: center;
                         gap: 5px;
+                        h1{
+                            color: var(--letters);
+                            font-weight: 500;
+                        }
                         .star{
                             width: 30px;
                         }
@@ -1003,11 +1194,12 @@ nav{
         }
     }
 
-    .news{
+    .Innews{
         display: grid;
         grid-gap: 50px;
         .p{
             font-size: 30px;
+            color: var(--malpage);
         }
         .bottom{
             display: flex;
@@ -1178,6 +1370,7 @@ nav{
         .topInfo{
             font-size: 30px;
             padding-bottom: 50px;
+            color: var(--malpage);
         }
         .bottom{
             display: flex;
@@ -1285,6 +1478,7 @@ nav{
     .sponsors{
         .topSponsors{
             padding-bottom:50px ;
+            color: var(--malpage);
         }
         .bottom{
             display: flex;
@@ -1369,6 +1563,7 @@ nav{
     .commentsPage{
         .topCommentsPage{
             padding-bottom: 30px;
+            color: var(--malpage);
         }
         .bottom{
             textarea{
@@ -1382,6 +1577,7 @@ nav{
                 font-size: 20px;
                 color: rgb(253,170,14);
                 margin: auto;
+                background-color: var(--bg-color);
             }
             .sentButton{
                 padding: 10px 20px;
@@ -1400,14 +1596,15 @@ nav{
                     display: grid;
                     grid-gap: 20px;
                     width: 100%;
+                    
                     .boxSms{
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        background-color: #E0E0E0;
-                        padding: 20px 10px;
+                        background-color: var(--bg-color);                        padding: 20px 10px;
                         border-radius: 10px;
                         transition: all 0.3s;
+                        border: 1px solid var(--border);
                         &:hover{
                             transform: translateY(-5px);
                         }
@@ -1416,6 +1613,9 @@ nav{
                             align-items: center;
                             gap: 10px;
                             line-height: 25px;
+                            p{
+                                color: var(--letters);
+                            }
                             h1{
                                 font-size: 17px;
                                 font-weight: 500;
@@ -1429,6 +1629,10 @@ nav{
                             .user{
                                 border-radius: 0px;
                             }
+                        }
+
+                        .right{
+                            color: var(--letters);
                         }
                     }
                 }
@@ -1467,10 +1671,17 @@ nav{
     }
 }
 
+@media(max-width:1189px){
+    .MainPage{
+        padding-top: 0px;
+        padding-bottom: 600px;
+    }
+}
+
 .expertMal{
     display: grid;
     padding: 20px;
-    padding-bottom: 500px;
+    padding-bottom: 20px;
     padding-top: 100px;
     .box{
         display: grid;
@@ -1649,17 +1860,19 @@ nav{
 
 .newsIn{
     padding-top: 100px;
-    padding-bottom: 500px;
+    padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
     .box{
         a{
             padding: 30px 0px;
+            color: var(--letters);
         }
         .nameNew{
             font-weight: 500;
             line-height: 50px;
             padding-bottom: 20px;
+            color: var(--letters);
         }
         img{
             border-radius: 10px;
@@ -1715,9 +1928,11 @@ nav{
     padding: 0px 20px;
     padding-top: 100px;
     text-align: center;
-    padding-bottom: 500px;
+    padding-bottom: 20px;
+
     .top{
         padding: 20px 0px;
+        color: var(--letters);
     }
     .p{
         font-size: 20px;
@@ -1773,7 +1988,7 @@ nav{
                 article{
                     width: 180px;
                     z-index: 2;
-                    line-height: 35px;
+                    line-height: 50px;
                     p{
                         font-size: 25px;
                         text-align: center;
@@ -1889,6 +2104,7 @@ nav{
                     display: grid;
                     grid-gap: 15px;
                     width: 50%;
+                    line-height: 20px;
                     p{
                         font-size: 20px;
                     }
@@ -2019,9 +2235,12 @@ nav{
     display: grid;
     grid-gap: 30px;
     padding: 0px 20px;
-    padding-top: 100px;
-    padding-bottom: 500px;
+    padding-top: 120px;
+    padding-bottom: 20px;
     gap: 30px;
+    .vedioTop{
+        color: var(--letters);
+    }
     .video{
         display: flex;
         flex-wrap: wrap;
@@ -2064,6 +2283,7 @@ nav{
     .media{
         .top{
             padding: 30px 0px;
+            color: var(--letters);
         }
         .bottom{
             display: flex;
@@ -2255,9 +2475,10 @@ nav{
 .projectsPage{
     padding: 0px 20px;
     padding-top: 100px;
-    padding-bottom: 500px;
+    padding-bottom: 20px;
     .top{
         padding: 30px 0px;
+        color: var(--letters);
     }
     .bottom{
         display: flex;
@@ -2285,7 +2506,6 @@ nav{
             }
             .img{
                 overflow: hidden;
-                height: 400px;
                 img{
                     width: 100%;
                     border-top-left-radius: 20px;
@@ -2374,10 +2594,13 @@ nav{
     padding: 0px 20px;
     grid-gap: 20px;
     padding-top:100px;
-    padding-bottom: 500px;
+    padding-bottom: 20px;
     .box{
         display: grid;
         grid-gap: 30px;
+        .name{
+            color: var(--letters);
+        }
         img{
             border-radius: 20px;
             width: 100%;
@@ -2525,8 +2748,11 @@ nav{
     grid-gap: 50px;
     padding: 0px 20px;
     padding-top: 100px;
+    padding-bottom: 20px;
     .p{
         font-size: 30px;
+        color: var(--letters);
+        padding: 20px;
     }
     .bottom{
         display: flex;
@@ -2611,6 +2837,17 @@ nav{
     }
 }
 
+@media(max-width:780px){
+    .news{
+        .bottom{
+            .box{
+                width: 100%;
+             }
+        }
+    }
+}
+
+
 @media(max-width:740px){
     .news{
         .bottom{
@@ -2689,3 +2926,409 @@ nav{
         }
     }
 }
+
+
+.volontyorsPage{
+    display: grid;
+    padding: 0px 20px;
+    padding-top: 130px;
+    padding-bottom: 0px;
+    ul{
+        .link{
+            text-decoration: none;
+        }
+        li{
+            cursor: pointer;
+            padding: 20px;
+            background-color: #E0E0E0;
+            border-radius: 10px;
+            border: 1px solid #00b141;
+            color: black;
+        }
+    }
+    .in{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+        .box{
+            width:650px;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 2px solid #00b141;
+            .top{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #00b141;
+                padding: 20px;
+                color: white;
+                article{
+                    width: 80%;
+                    text-align: start;
+                    h1{
+                        font-weight: 500;
+                    }
+                }
+                img{
+                    border: 5px solid white;
+                    background-color: #E0E0E0;
+                    border-radius: 50%;
+                    width: 50px;
+                    padding: 10px;
+                }
+            }
+    
+            .center{
+               background-color: white;
+               padding: 20px;
+               display: grid;
+               grid-gap: 20px;
+               span{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                img{
+                    width: 30px;
+                }
+                p{
+                    color: gray;
+                   }
+               }
+            }
+    
+            .bottom{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+                background-color: #00b14132;
+                h1{
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #00b141;
+                }
+                p{
+                    font-size: 25px;
+                    color: #00b141;
+                }
+            }
+        }
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        width: 300px;
+        gap: 10px;
+        padding: 30px 20px;
+        margin: auto;
+        button{
+            list-style: none;
+            cursor: pointer;
+            padding: 20px 20px;
+            background-color: #E0E0E0;
+            border: 2px solid #00b141;
+            border-radius: 10px;
+        }
+    }
+}
+
+@media(max-width:1377px){
+    .volontyorsPage{
+        .in{
+            .box{
+                width:600px;
+                border-radius: 20px;
+                overflow: hidden;
+                border: 2px solid #00b141;
+                transition: all 0.6s;
+            }
+        }
+    }
+}
+
+@media(max-width:1277px){
+    .volontyorsPage{
+        .in{
+            .box{
+                width:500px;
+                border-radius: 20px;
+                overflow: hidden;
+                border: 2px solid #00b141;
+                transition: all 0.6s;
+            }
+        }
+    }
+}
+
+@media(max-width:1177px){
+    .volontyorsPage{
+        .in{
+            .box{
+                width:500px;
+                border-radius: 20px;
+                overflow: hidden;
+                border: 2px solid #00b141;
+                transition: all 0.6s;
+            }
+        }
+    }
+}
+
+@media(max-width:1077px){
+    .volontyorsPage{
+        .in{
+            .box{
+                width:450px;
+                border-radius: 20px;
+                overflow: hidden;
+                border: 2px solid #00b141;
+                transition: all 0.6s;
+            }
+        }
+    }
+}
+
+@media(max-width:977px){
+    .volontyorsPage{
+        .in{
+            .box{
+                width:100%;
+                border-radius: 20px;
+                overflow: hidden;
+                border: 2px solid #00b141;
+                transition: all 0.6s;
+            }
+        }
+
+    }
+}
+
+
+@media(max-width:525px){
+    .volontyorsPage{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0px 20px;
+        padding-top: 100px;
+        padding-bottom: 500px;
+        gap: 30px;
+        .in{
+            .box{
+                width:100%;
+                border-radius: 20px;
+                overflow: hidden;
+                border: 2px solid #00b141;
+                margin: auto;
+                .top{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: #00b141;
+                    padding: 20px;
+                    color: white;
+                    gap: 10px;
+                    article{
+                        width: 80%;
+                        text-align: start;
+                        h1{
+                            font-weight: 500;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:422px){
+    .volontyorsPage{
+        .in{
+            .box{
+                .center{
+                    span{
+                        max-width: 90%;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:393px){
+    .volontyorsPage{
+        .in{
+            .box{
+                .center{
+                    span{
+                        p{
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//loading
+
+// .slider-container {
+//     width: 80%; // Adjust width as needed
+//     margin: auto; // Center the slider
+//     overflow: hidden; // Hide overflow to maintain clean edges
+//     position: relative; // Set position for absolute positioning of h1
+//   }
+  
+//   .slick-slide {
+//     position: relative; // Position relative to enable absolute positioning of children
+//     display: flex; // Center items inside the slide
+//     justify-content: center; // Center horizontally
+//     align-items: center; // Center vertically
+  
+//     img {
+//       max-width: 100%; // Responsive image
+//       height: auto; // Maintain aspect ratio
+//       border-radius: 10px; // Rounded corners for images
+//       display: block; // Remove bottom space in images
+//     }
+  
+//     h1 {
+//       position: absolute; // Position absolutely within the slide
+//       top: 50%; // Center vertically
+//       left: 50%; // Center horizontally
+//       transform: translate(-50%, -50%); // Offset by half its width and height
+//       color: #fff; // Text color (choose as needed)
+//       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); // Add shadow for better readability
+//       margin: 0; // Remove default margin
+//       z-index: 10; // Ensure h1 is above the image
+//       text-align: center; // Center text
+//     }
+//   }
+  
+//   .slick-dots {
+//     bottom: 10px; // Position dots
+//   }
+  
+//   .slick-dots li button:before {
+//     font-size: 12px; // Size of dots
+//     color: #bbb; // Color of inactive dots
+//   }
+  
+//   .slick-dots li.slick-active button:before {
+//     color: #333; // Color of active dot
+//   }
+  
+
+.create{
+    padding-top: 100px;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    .box{
+        display: grid;
+        background-color: rgba(253, 169, 14, 0.707);
+        border-radius: 10px;
+        p{
+            padding: 20px;
+            margin: auto;
+        }
+        .center{
+            display: grid;
+            grid-gap: 0px;
+            width: 360px;
+            height: 320px;  
+            padding: 20px;
+            span{
+                display: grid;
+                text-align: start;
+                input{
+                    width: 95%;
+                    height: 50px;
+                    outline: none;
+                    border-radius: 10px;
+                    border: none;
+                    padding: 0px 2.5%;
+                    font-size: 15px;
+                }
+                p{
+                    margin-left: -20px;
+                }
+            }
+        }
+        .bottom{
+            display: block;
+            align-items: center;
+            justify-content: center;
+            width: 360px;
+            padding: 20px;
+            padding-top: 0px;
+            line-height: 30px;
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                gap: 10px
+            }
+            button{
+                width: 100%;
+                height: 40px;
+                cursor: pointer;
+                margin: auto;
+                background-color: #00b141;
+                border: none;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+.Be{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .top{
+        display: grid;
+        grid-gap: 20px;
+        select{
+            padding: 10px ;
+        }
+        p{
+            color: #00b141;
+        }
+        span{
+            display: grid;
+            grid-gap: 10px;
+            input{
+                width: 340px;
+                padding: 10px 5px;
+                overflow: hidden;
+                outline:none;
+                border-radius: 10px;
+                border: 1px solid gray;
+                font-size: 17px;
+                color: gray;
+            }
+        }
+        button{
+            padding: 10px ;
+            cursor: pointer;
+            border-radius: 10px;
+            border: none;
+            background-color: #00b141;
+            font-size: 17px;
+            color: white;
+        }
+    }
+}
+  
+  

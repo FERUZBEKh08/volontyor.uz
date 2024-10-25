@@ -4,58 +4,77 @@ import youtube from "../public/icon/youtube.png";
 import facebook from "../public/icon/facebook.png";
 import instagram from "../public/icon/instagram.png";
 
+import { Link } from "react-router-dom";
+
 // import phone from "../public/icon/telephone.png";
 // import gmail from "../public/icon/gmail.png";
 
 //logo
-import logo from "../public/img/logo.png"
+import logo from "../public/img/logo.png";
 
 export default function NavbarBottom() {
   return (
     <div className="divNavBottom">
       <div className="navBottom">
-
+        <Link to="/">
         <img className="logo" src={logo} alt="" />
 
+        </Link>
+
         <ul>
-          <li>Biz haqimizda</li>
-          <li>Volontyorlar maktabi</li>
-          <li>Loyihalar</li>
-          <li>Volontyorlar</li>
-          <li>Yangiliklar</li>
-          <li>Volontyor bulish</li>
+          <Link className="link" to="/about">
+            <li>Biz haqimizda</li>
+          </Link>
+
+          <Link className="link" to="/school">
+            <li>Volontyorlar maktabi</li>
+          </Link>
+
+          <Link className="link" to="/projects">
+            <li>Loyihalar</li>
+          </Link>
+
+          <Link className="link" to="/volunteers">
+            <li>Volontyorlar</li>
+          </Link>
+
+          <Link className="link" to="/news">
+            <li>Yangiliklar</li>
+          </Link>
+
+          <Link className="link" to="/Be">
+            <li>Volontyor bulish</li>
+          </Link>
         </ul>
 
         <div className="two">
-        <div className="smm">
-          <div>
-            <img src={telegram} alt="" />
+          <div className="smm">
+            <div>
+              <a href="https://web.telegram.org/k/" target="_blank">
+                <img src={telegram} alt="" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.youtube.com/" target="_blank">
+              <img src={youtube} alt="" />
+              </a>
+            </div>
+            <div>
+            <a href="https://ru-ru.facebook.com/" target="_blank">
+              <img src={facebook} alt="" />
+            </a>
+            </div>
+            <div>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img src={instagram} alt="" />
+            </a>
+            </div>
+            <div>
+            <a href="https://x.com/" target="_blank">
+              <img src={x} alt="" />
+            </a>
+            </div>
           </div>
-          <div>
-            <img src={youtube} alt="" />
-          </div>
-          <div>
-            <img src={facebook} alt="" />
-          </div>
-          <div>
-            <img src={instagram} alt="" />
-          </div>
-          <div>
-            <img src={x} alt="" />
-          </div>
-
-        </div>
-        {/* <article>
-        <div className="mail">
-            <img src={gmail} alt="" />
-            <h1>volontyor@gmail.com</h1>
-          </div>
-
-          <div className="phone">
-            <img src={phone} alt="" />
-            <h1>+998 91 954 69 87</h1>
-          </div>
-        </article> */}
         </div>
       </div>
     </div>

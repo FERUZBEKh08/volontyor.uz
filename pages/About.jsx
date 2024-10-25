@@ -4,6 +4,7 @@ import project from "../public/icon/briefing.png";
 
 import manGranma from "../public/icon/ManAndGrandma.svg";
 import operator from "../public/icon/bank.png";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -23,69 +24,72 @@ export default function About() {
       </p>
 
       <div className="bottom">
-      <div className="four">
-        <div className="box">
-          <img className="icon" src={volt} alt="" />
-          <article>
-            <div>
-              <p>26,422</p>
-              <p>Volontyorlar</p>
-            </div>
-          </article>
+        <div className="four">
+          <div className="box">
+            <img className="icon" src={volt} alt="" />
+            <article>
+              <div>
+                <p>26,422</p>
+                <p>Volontyorlar</p>
+              </div>
+            </article>
+          </div>
+
+          <div className="box">
+            <img className="icon" src={org} alt="" />
+            <article>
+              <div>
+                <p>61</p>
+                <p>Tashkilotlar</p>
+              </div>
+            </article>
+          </div>
+
+          <div className="box">
+            <img className="icon" src={project} alt="" />
+            <article>
+              <div>
+                <p>31</p>
+                <p>Loyihalar</p>
+              </div>
+            </article>
+          </div>
         </div>
 
-        <div className="box">
-          <img className="icon" src={org} alt="" />
-          <article>
-            <div>
-              <p>61</p>
-              <p>Tashkilotlar</p>
-            </div>
-          </article>
+        <div className="five">
+          <div className="box">
+            <article>
+              <p>Volontyor bo‘lishni xohlaysizmi?</p>
+              <p className=".p">
+                Agar siz loyiha yoki tashkilotga yordam berishni istasangiz, bu
+                yerga o‘ting
+              </p>
+
+              <Link to="/be">
+                <button className="btnFour">Yordam berishni xohlayman</button>
+              </Link>
+            </article>
+            <img src={manGranma} alt="" />
+          </div>
+
+          <div className="box">
+            <article>
+              <p>Volontyorlar kerakmi?</p>
+              <p>
+                Sizning tashkilot volontyorlar yordami kerakmi, unda bu yerga
+                uting
+              </p>
+
+              <Link to="/volunteers">
+                <button className="btnFour">
+                  <span></span>
+                  <p>Volontyorlarni topish</p>
+                </button>
+              </Link>
+            </article>
+            <img src={operator} alt="" />
+          </div>
         </div>
-
-        <div className="box">
-          <img className="icon" src={project} alt="" />
-          <article>
-            <div>
-              <p>31</p>
-              <p>Loyihalar</p>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <div className="five">
-        <div className="box">
-          <article>
-            <p>Volontyor bo‘lishni xohlaysizmi?</p>
-            <p className=".p">
-              Agar siz loyiha yoki tashkilotga yordam berishni istasangiz, bu
-              yerga o‘ting
-            </p>
-
-            <button className="btnFour">Yordam berishni xohlayman</button>
-          </article>
-          <img src={manGranma} alt="" />
-        </div>
-
-        <div className="box">
-          <article>
-            <p>Volontyorlar kerakmi?</p>
-            <p>
-              Sizning tashkilot volontyorlar yordami kerakmi, unda bu yerga
-              uting
-            </p>
-
-            <button className="btnFour">
-              <span></span>
-              <p>Volontyorlarni topish</p>
-            </button>
-          </article>
-          <img src={operator} alt="" />
-        </div>
-      </div>
-
       </div>
     </div>
   );
