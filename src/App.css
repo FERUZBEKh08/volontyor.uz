@@ -11,6 +11,16 @@ body {
   transition: all 0.3s;
 }
 
+.slider article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  position: absolute;
+  bottom: 40%;
+  z-index: 2;
+}
+
 ::-webkit-scrollbar {
   width: 12px;
   z-index: 1;
@@ -551,22 +561,42 @@ nav ul li:hover::after {
 .MainPage .topPage {
   display: flex;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
   height: 700px;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   border-radius: 50px;
-  background-image: url(../public/img/xayriya.jpg);
+  overflow: hidden;
 }
-.MainPage .topPage::before {
+.MainPage .topPage .swiper {
+  width: 100%;
+  height: 100%;
+}
+.MainPage .topPage .slider {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 50px;
+}
+.MainPage .topPage .swiper-slide img {
+  border-radius: 30px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
+.MainPage .topPage .slider::before {
   content: "";
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 177, 65, 0.2431372549);
   position: absolute;
-  background-color: rgba(0, 177, 65, 0.3882352941);
+  top: 0;
+  left: 0;
   z-index: 0;
-  border-radius: 50px;
 }
 .MainPage .topPage article {
   display: grid;
@@ -586,6 +616,7 @@ nav ul li:hover::after {
 }
 .MainPage .topPage article p {
   font-size: 27px;
+  text-shadow: 0px 0px 5px gray;
 }
 .MainPage .topPage article .xyr {
   font-size: 25px;
@@ -1073,23 +1104,23 @@ nav ul li:hover::after {
     max-width: 100px;
   }
 }
-.MainPage .Innews {
+.MainPage .MainNews {
   display: grid;
   grid-gap: 50px;
 }
-.MainPage .Innews .p {
+.MainPage .MainNews .p {
   font-size: 30px;
   color: var(--malpage);
 }
-.MainPage .Innews .bottom {
+.MainPage .MainNews .bottom {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
 }
-.MainPage .Innews .bottom .box {
+.MainPage .MainNews .bottom .box {
   display: grid;
-  width: 310px;
+  width: 300px;
   height: 380px;
   background-color: #E0E0E0;
   padding: 10px;
@@ -1099,23 +1130,23 @@ nav ul li:hover::after {
   transition: all 0.6s;
   cursor: pointer;
 }
-.MainPage .Innews .bottom .box:hover {
+.MainPage .MainNews .bottom .box:hover {
   transform: translateY(-15px);
   box-shadow: 5px 5px 10px gray;
 }
-.MainPage .Innews .bottom .box .topNews img {
+.MainPage .MainNews .bottom .box .topNews img {
   width: 100%;
   height: 170px;
   border-radius: 10px;
 }
-.MainPage .Innews .bottom .box .topNews .name {
+.MainPage .MainNews .bottom .box .topNews .name {
   margin-top: 7px;
 }
-.MainPage .Innews .bottom .box .h1 {
+.MainPage .MainNews .bottom .box .h1 {
   font-size: 19px;
   font-weight: 400;
 }
-.MainPage .Innews .bottom .box .span {
+.MainPage .MainNews .bottom .box .span {
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -1131,77 +1162,77 @@ nav ul li:hover::after {
   width: 280px;
   color: black;
 }
-.MainPage .Innews .bottom .box .span .date {
+.MainPage .MainNews .bottom .box .span .date {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-.MainPage .Innews .bottom .box .span .clock {
+.MainPage .MainNews .bottom .box .span .clock {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-.MainPage .Innews .bottom .box .span img {
+.MainPage .MainNews .bottom .box .span img {
   width: 20px;
   height: 20px;
 }
 @media (max-width: 1190px) {
-  .MainPage .news .bottom .box {
+  .MainPage .MainNews .bottom .box {
     width: 45%;
   }
-  .MainPage .news .bottom .box .topNews .imgOne {
+  .MainPage .MainNews .bottom .box .topNews .imgOne {
     height: 200px;
   }
 }
 @media (max-width: 740px) {
-  .MainPage .news .bottom .box {
+  .MainPage .MainNews .bottom .box {
     width: 100%;
     height: 450px;
   }
-  .MainPage .news .bottom .box .topNews .imgOne {
+  .MainPage .MainNews .bottom .box .topNews .imgOne {
     height: 300px;
   }
 }
 @media (max-width: 690px) {
-  .MainPage .news .bottom .box {
+  .MainPage .MainNews .bottom .box {
     margin: auto;
   }
 }
 @media (max-width: 595px) {
-  .MainPage .news .bottom .box {
+  .MainPage .MainNews .bottom .box {
     width: 100%;
     height: 470px;
   }
-  .MainPage .news .bottom .box .topNews {
+  .MainPage .MainNews .bottom .box .topNews {
     font-size: 15px;
   }
-  .MainPage .news .bottom .box .topNews .imgOne {
+  .MainPage .MainNews .bottom .box .topNews .imgOne {
     height: 300px;
   }
 }
 @media (max-width: 517px) {
-  .MainPage .news .bottom .box {
+  .MainPage .MainNews .bottom .box {
     width: 100%;
     height: 470px;
   }
-  .MainPage .news .bottom .box .topNews {
+  .MainPage .MainNews .bottom .box .topNews {
     font-size: 15px;
   }
-  .MainPage .news .bottom .box .topNews .imgOne {
+  .MainPage .MainNews .bottom .box .topNews .imgOne {
     height: 250px;
   }
 }
 @media (max-width: 450px) {
-  .MainPage .news .bottom .box {
+  .MainPage .MainNews .bottom .box {
     height: 370px;
   }
-  .MainPage .news .bottom .box .topNews {
+  .MainPage .MainNews .bottom .box .topNews {
     font-size: 15px;
   }
-  .MainPage .news .bottom .box .topNews .imgOne {
+  .MainPage .MainNews .bottom .box .topNews .imgOne {
     height: 200px;
   }
-  .MainPage .news .bottom .box:nth-child(2) {
+  .MainPage .MainNews .bottom .box:nth-child(2) {
     height: 400px;
   }
 }
@@ -1215,6 +1246,22 @@ nav ul li:hover::after {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 30px;
+}
+.MainPage .experts .bottom .swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.MainPage .experts .bottom .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: calc((100% - 30px) / 2) !important;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .MainPage .experts .bottom .boxExpert {
   width: 330px;
@@ -1299,15 +1346,34 @@ nav ul li:hover::after {
     margin: auto;
   }
 }
+.MainPage .sponsors {
+  overflow: hidden;
+}
 .MainPage .sponsors .topSponsors {
-  padding-bottom: 50px;
+  padding-bottom: 10px;
   color: var(--malpage);
 }
 .MainPage .sponsors .bottom {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MainPage .sponsors .bottom .swiper {
+  display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+.MainPage .sponsors .bottom .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  height: calc((100% - 30px) / 2) !important;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .MainPage .sponsors .bottom .sponsor {
   display: flex;
@@ -1350,12 +1416,64 @@ nav ul li:hover::after {
 }
 @media (max-width: 1000px) {
   .MainPage .sponsors .bottom .sponsor {
-    width: 400px;
+    width: 350px;
   }
 }
-@media (max-width: 870px) {
+@media (max-width: 973px) {
   .MainPage .sponsors .bottom .sponsor {
-    width: 100%;
+    width: 200px;
+  }
+  .MainPage .sponsors .bottom .sponsor img {
+    max-width: 150px;
+  }
+}
+@media (max-width: 697px) {
+  .MainPage .sponsors .bottom .sponsor {
+    width: 150px;
+    height: 150px;
+  }
+  .MainPage .sponsors .bottom .sponsor img {
+    max-width: 130px;
+    width: 10px;
+  }
+  .MainPage .sponsors .bottom .sponsor:nth-child(6) img {
+    width: 20px;
+  }
+}
+@media (max-width: 613px) {
+  .MainPage .sponsors .bottom .sponsor {
+    width: 120px;
+    height: 140px;
+  }
+  .MainPage .sponsors .bottom .sponsor img {
+    max-width: 130px;
+  }
+}
+@media (max-width: 578px) {
+  .MainPage .sponsors .bottom .sponsor {
+    width: 110px;
+    height: 120px;
+  }
+  .MainPage .sponsors .bottom .sponsor img {
+    max-width: 80px;
+  }
+}
+@media (max-width: 424px) {
+  .MainPage .sponsors .bottom .sponsor {
+    width: 100px;
+    height: 100px;
+  }
+  .MainPage .sponsors .bottom .sponsor img {
+    max-width: 70px;
+  }
+}
+@media (max-width: 372px) {
+  .MainPage .sponsors .bottom .sponsor {
+    width: 90px;
+    height: 90px;
+  }
+  .MainPage .sponsors .bottom .sponsor img {
+    max-width: 65px;
   }
 }
 .MainPage .commentsPage .topCommentsPage {

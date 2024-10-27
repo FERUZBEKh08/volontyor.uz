@@ -48,9 +48,7 @@ export default function Navbar() {
           </button>
         </ul>
 
-        {/* <Link to="/create">
-          <button>Ruyhatdan utish</button>
-        </Link> */}
+
 
         <Dark/>
       </nav>

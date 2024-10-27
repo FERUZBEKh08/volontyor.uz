@@ -2,6 +2,21 @@ import { useEffect, useState } from "react";
 
 import "./App.css";
 
+//Swiper
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import 'swiper/css/effect-coverflow';
+
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
+
 //comments
 import Comments from "../comments/comments";
 
@@ -16,7 +31,11 @@ import uicon from "../public/icon/people.png";
 
 import star from "../public/icon/star.png";
 
-// import stl from "../public/icon/strilka.png"
+//swiperImg
+
+import xayriya from "../public/img/xayriya.jpg";
+import xayriya2 from "../public/img/xayriya2.jpeg";
+import xayriya3 from "../public/img/children3.jpg";
 
 //icon
 
@@ -86,7 +105,7 @@ export default function MainPage() {
       });
   }, []);
 
-  //sponsors
+  sponsors
   useEffect(() => {
     fetch(
       "https://cuqrwqnnguneymulgghg.supabase.co/storage/v1/object/public/zgfor/db.json"
@@ -103,20 +122,62 @@ export default function MainPage() {
   return (
     <div className="MainPage">
       <div className="topPage">
-        <article>
-          <p>&#39;&#39;Inson uchun xayriya qilish loyihasi&#39;&#39;</p>
-          <p>
-            Insonlarga rahm-shafqat ko&#39;rsating va qiyin hayotiy vaziyatlarda
-            qo&#39;llab-quvvatlang.
-          </p>
-          <a
-            className="btn2"
-            target="__blanc"
-            href="https://promo.click.uz/2HUz/zmsguznp"
-          >
-            <p className="xyr">Xayriya</p>
-          </a>
-        </article>
+        <Swiper
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="mySwiper"
+        >
+          <SwiperSlide className="slider">
+            <article>
+              <p>&#39;&#39;Inson uchun xayriya qilish loyihasi&#39;&#39;</p>
+              <p>
+                Insonlarga rahm-shafqat ko&#39;rsating va qiyin hayotiy
+                vaziyatlarda qo&#39;llab-quvvatlang.
+              </p>
+              <a
+                className="btn2"
+                target="__blanc"
+                href="https://promo.click.uz/2HUz/zmsguznp"
+              >
+                <p className="xyr">Xayriya</p>
+              </a>
+            </article>
+            <img src={xayriya} alt="" />
+          </SwiperSlide>
+
+          <SwiperSlide className="slider">
+            <article>
+              <p>&#39;&#39;Bizning birimizga aylaning&#39;&#39;</p>
+              <p>Agar volontyor bulishni xoxasangiz bizga qushiling</p>
+              <Link to="/Be" className="btn2">
+                <p className="xyr">Volontyorlik</p>
+              </Link>
+            </article>
+            <img src={xayriya2} alt="" />
+          </SwiperSlide>
+
+          <SwiperSlide className="slider">
+            <article>
+              <p>&#39;&#39;Biz haqimizda&#39;&#39;</p>
+              <p>
+                Biz haqimizda tuliq malumotni bilishni hoxlasangiz pasdagi
+                &#39;&#39;Haqimizda&#39;&#39; tugmasini bosing!
+              </p>
+              <Link to="/about" className="btn2">
+                <p className="xyr">Haqimizda</p>
+              </Link>
+            </article>
+            <img src={xayriya3} alt="" />
+          </SwiperSlide>
+        </Swiper>
       </div>
 
       <div className="one">
@@ -140,7 +201,7 @@ export default function MainPage() {
           </h1>
 
           <Link to="/Be">
-          <button className="btnThree">A’zo bo‘lish</button>
+            <button className="btnThree">A’zo bo‘lish</button>
           </Link>
         </div>
 
@@ -235,10 +296,9 @@ export default function MainPage() {
               yerga o‘ting
             </p>
 
-              <Link to="./be">
+            <Link to="./be">
               <button className="btnFour">Yordam berishni xohlayman</button>
-
-              </Link>
+            </Link>
           </article>
           <img src={manGranma} alt="" />
         </div>
@@ -262,7 +322,7 @@ export default function MainPage() {
         </div>
       </div>
 
-      <div className="news">
+      <div className="MainNews">
         <h1 className="p mall-page">So‘nggi yangiliklar</h1>
 
         <div className="bottom">
@@ -314,18 +374,30 @@ export default function MainPage() {
         <h1 className="topSponsors mall-page">Homiylar</h1>
 
         <div className="bottom">
-          {sponsors.map((sponsors) => {
-            return (
-              <a
-                key={sponsors.id}
-                className="sponsor"
-                href={sponsors.link}
-                target="__blanc"
-              >
-                <img src={sponsors.logo} alt="" />
-              </a>
-            );
-          })}
+          <Swiper
+            slidesPerView={4}
+            spaceBetween={30}
+            grabCursor={true}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
+        
+
+            {sponsors.map((sponsors) => {
+              return (
+                <SwiperSlide key={sponsors.id}>
+                <a
+                  key={sponsors.id}
+                  className="sponsor"
+                  href={sponsors.link}
+                  target="__blanc"
+                >
+                  <img src={sponsors.logo} alt="" />
+                </a>
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
         </div>
       </div>
 
