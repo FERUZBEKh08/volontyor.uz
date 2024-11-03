@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState , useEffect } from "react";
 
 import logo from "../public/img/logo.png";
 import enter from "../public/icon/enter.png";
@@ -17,6 +17,14 @@ export default function Navbar() {
     }, 1500);
   };
 
+  useEffect(() => {
+    if (loading) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [loading]);
+  
   return (
     <div className="divNav">
       <nav className="navTop">
@@ -27,30 +35,32 @@ export default function Navbar() {
         </div>
 
         <ul>
-          <Link className="link" to="/about">
-            <li onClick={handleLoader}>Biz haqimizda</li>
+          <Link className="link" to="/about" onClick={handleLoader}>
+            <li>Biz haqimizda</li>
           </Link>
-          <Link to="/school" className="link">
-            <li onClick={handleLoader}>Volontyorlar maktabi</li>
+          <Link to="/school" className="link" onClick={handleLoader}>
+            <li>Volontyorlar maktabi</li>
           </Link>
-          <Link to="/projects" className="link">
-            <li onClick={handleLoader}>Loyihalar</li>
+          <Link to="/projects" className="link" onClick={handleLoader}>
+            <li>Loyihalar</li>
           </Link>
-          <Link to="/volunteers" className="link">
-            <li onClick={handleLoader}>Volontyorlar</li>
+          <Link to="/volunteers" className="link" onClick={handleLoader}>
+            <li>Volontyorlar</li>
           </Link>
-          <Link to="/news" className="link">
-            <li onClick={handleLoader}>Yangiliklar</li>
+          <Link to="/news" className="link" onClick={handleLoader}>
+            <li>Yangiliklar</li>
           </Link>
-          <button onClick={handleLoader} className="btnOne">
+          <Link to="/be" onClick={handleLoader} className="btnOne">
             <img src={enter} alt="" />
             Volontyor bulish
-          </button>
+          </Link>
         </ul>
 
+        <Link to="/create" className="link" onClick={handleLoader}>
+          <button className="kirishBtn">Kirish</button>
+        </Link>
 
-
-        <Dark/>
+        <Dark />
       </nav>
 
       {loading && (

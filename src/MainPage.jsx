@@ -54,6 +54,11 @@ import openIcon from "../public/icon/open.png";
 import clock from "../public/icon/wall-clock.png";
 import date from "../public/icon/calendar.png";
 
+//tg
+
+import Tgbtn from "../tgbtn/tg"
+
+
 export default function MainPage() {
   //volontyor
   const [mal, setMal] = useState([]);
@@ -313,8 +318,7 @@ export default function MainPage() {
 
             <Link to="/volunteers">
               <button className="btnFour">
-                <span></span>
-                <p>Volontyorlarni topish</p>
+                Volontyorlarni topish
               </button>
             </Link>
           </article>
@@ -405,6 +409,8 @@ export default function MainPage() {
         <h1 className="topCommentsPage mall-page">Izohlar</h1>
         <Comments />
       </div>
+
+      <Tgbtn/>
     </div>
   );
 }

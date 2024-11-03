@@ -86,13 +86,30 @@ import VolonteerFour from "../pages/VolunteerFour";
 import VolonteerFive from "../pages/VolunteerFive";
 
 //akkaunt 
-// import Create from "../pages/Create";
+import Create from "./create";
+
+import Join from "./join";
+
 
 
 //slider
 import 'slick-carousel/slick/slick.css'; 
 import 'slick-carousel/slick/slick-theme.css';
 import Be from "../pages/Be";
+
+//dashboard
+
+import Dashboard from "../dashboard/dashboard";
+import Donlayn from "../dashboard/Donlayn";
+import Dfoyda from "../dashboard/Dfoyda";
+import Dblock from "../dashboard/Dblock";
+import Dopen from "../dashboard/Dopen";
+
+//Telegram
+
+import Tg from "../pages/Tg"
+
+
 
 
 
@@ -165,6 +182,23 @@ export default function App() {
 
         <Route path="/Be" element={<Be/>} />
 
+        <Route path="/create" element={<Create/>} />
+        <Route path="/join" element={<Join/>} />
+
+        <Route path="/dashboard" element={<Dashboard/>} />
+        <Route path="/dashboard/online" element={<Donlayn/>} />
+        <Route path="/dashboard/benefit" element={<Dfoyda/>} />
+        <Route path="/dashboard/block" element={<Dblock/>} />
+        <Route path="/dashboard/open" element={<Dopen/>} />
+
+        <Route path="/send" element={<Tg/>} />
+
+
+
+
+
+
+
       
         <Route path="*" element={<NotFount/>} />
       </Route>
@@ -174,6 +208,7 @@ export default function App() {
   return (
     <div className="container">
       <RouterProvider router={routes} />
+
     </div>
   );
 }

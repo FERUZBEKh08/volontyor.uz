@@ -1,32 +1,32 @@
 import { useState, useEffect } from 'react';
+import { MdOutlineWbSunny, MdNightlight } from 'react-icons/md';
 
 const App = () => {
-    const [isDarkMode, setIsDarkMode] = useState(() => {
-        const savedMode = localStorage.getItem('darkMode');
-        return savedMode === 'true';
-    });
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
-    const toggleDarkMode = () => {
-        setIsDarkMode(prevMode => !prevMode);
-    };
+  const toggleDarkMode = () => {
+    setIsDarkMode((prevMode) => !prevMode);
+  };
 
-    useEffect(() => {
-        if (isDarkMode) {
-            document.body.classList.add('dark-mode');
-            localStorage.setItem('darkMode', 'true');
-        } else {
-            document.body.classList.remove('dark-mode');
-            localStorage.setItem('darkMode', 'false');
-        }
-    }, [isDarkMode]);
+  useEffect(() => {
+    if (isDarkMode) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
+  }, [isDarkMode]);
 
-    return (
-        <div>
-            <button onClick={toggleDarkMode} className='darkmode'>
-                {isDarkMode ? 'Light' : 'Dark'}
-            </button>
-        </div>
-    );
+  return (
+    <div className="App">
+      <button className='darkBtn' onClick={toggleDarkMode}>
+        {isDarkMode ? (
+          <MdOutlineWbSunny style={{ width: '30px', height: '30px', color: 'yellow' }} /> // Quyosh ikonasini sariq rangda
+        ) : (
+          <MdNightlight style={{ width: '30px', height: '30px', color: '#00b140' }} /> // Oy ikonasini oq rangda
+        )}
+      </button>
+    </div>
+  );
 };
 
 export default App;

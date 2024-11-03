@@ -82,8 +82,7 @@ export default function About() {
 
               <Link to="/volunteers">
                 <button className="btnFour">
-                  <span></span>
-                  <p>Volontyorlarni topish</p>
+                Volontyorlarni topish
                 </button>
               </Link>
             </article>

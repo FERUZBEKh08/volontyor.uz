@@ -4,39 +4,43 @@ import user from "../public/icon/people.png";
 export default function Comments() {
   const [comment, setComment] = useState("");
   const [comments, setComments] = useState([]);
+  const [notification, setNotification] = useState(false); // Bildirishni boshqarish uchun yangi state
 
-  // Local storage dan comments ni o'qish
   useEffect(() => {
     const storedComments = JSON.parse(localStorage.getItem("comments"));
-    setComments(storedComments);
+    setComments(storedComments || []);
   }, []);
 
-  // Comments ni local storage ga saqlash
   useEffect(() => {
     localStorage.setItem("comments", JSON.stringify(comments));
   }, [comments]);
 
   const click = () => {
     if (comment !== "") {
-      setComments((e) => [...e, comment]);
-      setComment(""); // Yangi sharh qo'shilgandan so'ng textarea ni tozalash
-      
+      setComments((prev) => [...prev, comment]);
+      setComment("");
+      setNotification(true);
+
+      setTimeout(() => {
+        setNotification(false);
+      }, 3000);
     }
   };
 
   const change = (e) => {
     setComment(e.target.value);
-    localStorage.clear()
   };
 
   return (
     <div className="bottom">
       <article>
-        <textarea onChange={change} value={comment} maxLength={25}></textarea>
+        <textarea onChange={change} value={comment} maxLength={20}></textarea>
         <button className="sentButton" type="button" onClick={click}>
-          junaish
+          junatish
         </button>
       </article>
+
+      {notification && <p className="notification">Xabar junatildi</p>}
 
       <div className="two">
         <div className="sms">
@@ -48,7 +52,7 @@ export default function Comments() {
               />
               <div>
                 <p>ABDURAHMON</p>
-                <h1>(Mamakatimizga ancha foydasi tigadigan sayt ekan)</h1>
+                <h1>(Mamlakatimizga ancha foydasi tegadigan sayt ekan)</h1>
               </div>
             </div>
             <p className="right">1 kun oldin</p>
@@ -62,7 +66,7 @@ export default function Comments() {
               />
               <div>
                 <p>Ali 090</p>
-                <h1>(Ajoyib man ham volontyor bulmoqchiman)</h1>
+                <h1>(Ajoyib, men ham volontyor bulmoqchiman)</h1>
               </div>
             </div>
             <p className="right">1 soat oldin</p>
@@ -73,7 +77,7 @@ export default function Comments() {
               <div className="left">
                 <img className="user" src={user} alt="" />
                 <div>
-                  <p>Siz</p>
+                  <p>User-2721</p>
                   <h1>({sms})</h1>
                 </div>
               </div>
